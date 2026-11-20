@@ -39,3 +39,9 @@
 .leaflet-popup-tip {
   background: #16171B !important;
 }
+
+/* Custom map marker transparent background */
+.custom-map-marker {
+  background: transparent !important;
+  border: none !important;
+}

@@ -293,7 +293,7 @@ export function seedData(force = false) {
     [
       'ev_primal_void',
       'Primal Void',
-      '3-Day Sonic Decadence',
+      'Dimensional Magic Tribe Presents — Primal Void',
       'primal-void-24-december-2026-goa-bfkd7n',
       'A nocturnal descent into raw hypnotic techno and relentless bass frequencies. Primal Void occupies the iconic open-air amphitheatric cliff of D Pedro, commanding an intimate communion of underground purists, monolithic modular synthesizers, and unbroken hypnotic flow.',
       'Nightlife',
@@ -861,7 +861,7 @@ export function seedData(force = false) {
     [
       'tier_pv_eb',
       'ev_primal_void',
-      'Early Bird Pass',
+      'Early Bird',
       'Concluded allocation for loyal community early patrons.',
       1499,
       100,
@@ -876,17 +876,32 @@ export function seedData(force = false) {
     [
       'tier_pv_p1',
       'ev_primal_void',
-      'Full Gathering Pass (3 Days)',
-      'Single wristband valid for all three nocturnal sessions at D Pedro cliff.',
-      2499,
-      300,
-      95,
+      'Phase 1',
+      'Phase 1 pass for D Pedro clifftop sessions.',
+      3499,
+      200,
+      200,
       0,
-      'Available Now',
+      'Tier Closed',
       JSON.stringify(['3-Day Entry', 'Clifftop Sunrise Access', 'Audio Sanctuary']),
       1,
       4,
       2
+    ],
+    [
+      'tier_pv_t2',
+      'ev_primal_void',
+      'Tier 2',
+      'Current active pass allocation for Primal Void.',
+      4999,
+      300,
+      48,
+      0,
+      'Available Now',
+      JSON.stringify(['3-Day Full Entry', 'Precision Engineered Sound System', 'Visionary Arts & Healing Zone']),
+      1,
+      6,
+      3
     ],
 
     // Perseverance Festival

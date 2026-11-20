@@ -20,6 +20,7 @@ import AdminPortal from './components/AdminPortal.jsx';
 import PolicyModal from './components/PolicyModal.jsx';
 import Footer from './components/Footer.jsx';
 import BottomNav from './components/BottomNav.jsx';
+import LoginModal from './components/LoginModal.jsx';
 
 function MainApp() {
   const { role, switchRole } = useAuth();
@@ -45,6 +46,7 @@ function MainApp() {
   const [promoterPortalOpen, setPromoterPortalOpen] = useState(false);
   const [sponsorPortalOpen, setSponsorPortalOpen] = useState(false);
   const [adminPortalOpen, setAdminPortalOpen] = useState(false);
+  const [loginModalOpen, setLoginModalOpen] = useState(false);
   const [activePolicy, setActivePolicy] = useState(null);
   const [bottomNavTab, setBottomNavTab] = useState('explore');
 
@@ -109,6 +111,7 @@ function MainApp() {
     <div className="min-h-screen bg-[#0A0A0C] text-[#FFFFFF] font-sans flex flex-col selection:bg-white selection:text-black">
       {/* Top Navbar */}
       <Navbar
+        onOpenLogin={() => setLoginModalOpen(true)}
         onOpenTickets={() => setTicketsWalletOpen(true)}
         onOpenOrganizer={() => setOrganizerPortalOpen(true)}
         onOpenPromoter={() => setPromoterPortalOpen(true)}
@@ -186,6 +189,7 @@ function MainApp() {
         <EventDetailModal
           eventId={selectedEventId}
           onClose={() => setSelectedEventId(null)}
+          onOpenAdmin={() => setAdminPortalOpen(true)}
           onProceedToCheckout={(data) => {
             setSelectedEventId(null);
             setCheckoutData(data);
@@ -247,6 +251,14 @@ function MainApp() {
         <PolicyModal
           type={activePolicy}
           onClose={() => setActivePolicy(null)}
+        />
+      )}
+
+      {loginModalOpen && (
+        <LoginModal
+          isOpen={loginModalOpen}
+          onClose={() => setLoginModalOpen(false)}
+          onBrowseWithoutLogin={() => setLoginModalOpen(false)}
         />
       )}
     </div>

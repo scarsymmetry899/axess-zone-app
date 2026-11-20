@@ -138,12 +138,12 @@ async function runAxessE2ETestSuite() {
     await page.waitForTimeout(1000);
 
     // Verify Event Detail Modal
-    const eventModalDetail = await page.waitForSelector('span:has-text("Event Intelligence")');
+    const eventModalDetail = await page.waitForSelector('span:has-text("Event Details"), span:has-text("Event Intelligence")');
     assert(eventModalDetail !== null, 'Event Detail modal opened with live tiers & venue map');
     await page.screenshot({ path: 'scripts/e2e-06-event-detail.png' });
 
-    // Click Reserve & Checkout
-    const reserveBtn = await page.waitForSelector('button:has-text("Reserve & Checkout")');
+    // Click Book Tickets inside modal
+    const reserveBtn = page.locator('div[class*="fixed"] button:has-text("Book Tickets"), div[class*="fixed"] button:has-text("Reserve & Checkout")').first();
     await reserveBtn.click();
     await page.waitForTimeout(1000);
 
@@ -193,7 +193,7 @@ async function runAxessE2ETestSuite() {
     // Open Gate Scanner via Organizer shortcut or Navbar
     await page.click('header button[aria-label="Login"]');
     await page.waitForTimeout(500);
-    await page.click('button:has-text("Event Organiser")');
+    await page.click('button:has-text("Organizer"), button:has-text("Event Organiser")');
     await page.waitForTimeout(800);
 
     // Click Gate Scanner button

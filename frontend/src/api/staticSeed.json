@@ -23,13 +23,13 @@
       "is_past": 0,
       "status": "PUBLISHED",
       "organizer_id": "user_organizer",
-      "created_at": "2026-11-20 09:37:01",
-      "updated_at": "2026-11-20 09:37:01"
+      "created_at": "2026-11-20 10:39:15",
+      "updated_at": "2026-11-20 10:39:15"
     },
     {
       "id": "ev_primal_void",
       "title": "Primal Void",
-      "subtitle": "3-Day Sonic Decadence",
+      "subtitle": "Dimensional Magic Tribe Presents — Primal Void",
       "slug": "primal-void-24-december-2026-goa-bfkd7n",
       "description": "A nocturnal descent into raw hypnotic techno and relentless bass frequencies. Primal Void occupies the iconic open-air amphitheatric cliff of D Pedro, commanding an intimate communion of underground purists, monolithic modular synthesizers, and unbroken hypnotic flow.",
       "category": "Nightlife",
@@ -49,8 +49,8 @@
       "is_past": 0,
       "status": "PUBLISHED",
       "organizer_id": "user_organizer",
-      "created_at": "2026-11-20 09:37:01",
-      "updated_at": "2026-11-20 09:37:01"
+      "created_at": "2026-11-20 10:39:15",
+      "updated_at": "2026-11-20 10:39:15"
     },
     {
       "id": "ev_perseverance",
@@ -75,8 +75,8 @@
       "is_past": 0,
       "status": "PUBLISHED",
       "organizer_id": "user_organizer",
-      "created_at": "2026-11-20 09:37:01",
-      "updated_at": "2026-11-20 09:37:01"
+      "created_at": "2026-11-20 10:39:15",
+      "updated_at": "2026-11-20 10:39:15"
     },
     {
       "id": "ev_vanaghotra",
@@ -101,8 +101,8 @@
       "is_past": 0,
       "status": "PUBLISHED",
       "organizer_id": "user_organizer",
-      "created_at": "2026-11-20 09:37:01",
-      "updated_at": "2026-11-20 09:37:01"
+      "created_at": "2026-11-20 10:39:15",
+      "updated_at": "2026-11-20 10:39:15"
     },
     {
       "id": "ev_dark_obscura",
@@ -127,8 +127,8 @@
       "is_past": 0,
       "status": "PUBLISHED",
       "organizer_id": "user_organizer",
-      "created_at": "2026-11-20 09:37:01",
-      "updated_at": "2026-11-20 09:37:01"
+      "created_at": "2026-11-20 10:39:15",
+      "updated_at": "2026-11-20 10:39:15"
     },
     {
       "id": "ev_ritual_void",
@@ -153,8 +153,8 @@
       "is_past": 0,
       "status": "PUBLISHED",
       "organizer_id": "user_organizer",
-      "created_at": "2026-11-20 09:37:01",
-      "updated_at": "2026-11-20 09:37:01"
+      "created_at": "2026-11-20 10:39:15",
+      "updated_at": "2026-11-20 10:39:15"
     }
   ],
   "events": [
@@ -181,8 +181,8 @@
       "is_past": 0,
       "status": "PUBLISHED",
       "organizer_id": "user_organizer",
-      "created_at": "2026-11-20 09:37:01",
-      "updated_at": "2026-11-20 09:37:01"
+      "created_at": "2026-11-20 10:39:15",
+      "updated_at": "2026-11-20 10:39:15"
     },
     {
       "id": "ev_ritual_void",
@@ -207,13 +207,13 @@
       "is_past": 0,
       "status": "PUBLISHED",
       "organizer_id": "user_organizer",
-      "created_at": "2026-11-20 09:37:01",
-      "updated_at": "2026-11-20 09:37:01"
+      "created_at": "2026-11-20 10:39:15",
+      "updated_at": "2026-11-20 10:39:15"
     },
     {
       "id": "ev_primal_void",
       "title": "Primal Void",
-      "subtitle": "3-Day Sonic Decadence",
+      "subtitle": "Dimensional Magic Tribe Presents — Primal Void",
       "slug": "primal-void-24-december-2026-goa-bfkd7n",
       "description": "A nocturnal descent into raw hypnotic techno and relentless bass frequencies. Primal Void occupies the iconic open-air amphitheatric cliff of D Pedro, commanding an intimate communion of underground purists, monolithic modular synthesizers, and unbroken hypnotic flow.",
       "category": "Nightlife",
@@ -233,8 +233,8 @@
       "is_past": 0,
       "status": "PUBLISHED",
       "organizer_id": "user_organizer",
-      "created_at": "2026-11-20 09:37:01",
-      "updated_at": "2026-11-20 09:37:01"
+      "created_at": "2026-11-20 10:39:15",
+      "updated_at": "2026-11-20 10:39:15"
     },
     {
       "id": "ev_unmada_nye",
@@ -259,8 +259,8 @@
       "is_past": 0,
       "status": "PUBLISHED",
       "organizer_id": "user_organizer",
-      "created_at": "2026-11-20 09:37:01",
-      "updated_at": "2026-11-20 09:37:01"
+      "created_at": "2026-11-20 10:39:15",
+      "updated_at": "2026-11-20 10:39:15"
     },
     {
       "id": "ev_perseverance",
@@ -285,8 +285,8 @@
       "is_past": 0,
       "status": "PUBLISHED",
       "organizer_id": "user_organizer",
-      "created_at": "2026-11-20 09:37:01",
-      "updated_at": "2026-11-20 09:37:01"
+      "created_at": "2026-11-20 10:39:15",
+      "updated_at": "2026-11-20 10:39:15"
     },
     {
       "id": "ev_vanaghotra",
@@ -311,8 +311,8 @@
       "is_past": 0,
       "status": "PUBLISHED",
       "organizer_id": "user_organizer",
-      "created_at": "2026-11-20 09:37:01",
-      "updated_at": "2026-11-20 09:37:01"
+      "created_at": "2026-11-20 10:39:15",
+      "updated_at": "2026-11-20 10:39:15"
     },
     {
       "id": "ev_hentai_goa",
@@ -337,8 +337,8 @@
       "is_past": 0,
       "status": "PUBLISHED",
       "organizer_id": "user_organizer",
-      "created_at": "2026-11-20 09:37:01",
-      "updated_at": "2026-11-20 09:37:01"
+      "created_at": "2026-11-20 10:39:15",
+      "updated_at": "2026-11-20 10:39:15"
     },
     {
       "id": "ev_hentai_blr",
@@ -363,8 +363,8 @@
       "is_past": 0,
       "status": "PUBLISHED",
       "organizer_id": "user_organizer",
-      "created_at": "2026-11-20 09:37:01",
-      "updated_at": "2026-11-20 09:37:01"
+      "created_at": "2026-11-20 10:39:15",
+      "updated_at": "2026-11-20 10:39:15"
     },
     {
       "id": "ev_invention",
@@ -389,8 +389,8 @@
       "is_past": 0,
       "status": "PUBLISHED",
       "organizer_id": "user_organizer",
-      "created_at": "2026-11-20 09:37:01",
-      "updated_at": "2026-11-20 09:37:01"
+      "created_at": "2026-11-20 10:39:15",
+      "updated_at": "2026-11-20 10:39:15"
     },
     {
       "id": "ev_maleficus",
@@ -415,8 +415,8 @@
       "is_past": 0,
       "status": "PUBLISHED",
       "organizer_id": "user_organizer",
-      "created_at": "2026-11-20 09:37:01",
-      "updated_at": "2026-11-20 09:37:01"
+      "created_at": "2026-11-20 10:39:15",
+      "updated_at": "2026-11-20 10:39:15"
     },
     {
       "id": "ev_xmoon",
@@ -441,8 +441,8 @@
       "is_past": 0,
       "status": "PUBLISHED",
       "organizer_id": "user_organizer",
-      "created_at": "2026-11-20 09:37:01",
-      "updated_at": "2026-11-20 09:37:01"
+      "created_at": "2026-11-20 10:39:15",
+      "updated_at": "2026-11-20 10:39:15"
     }
   ],
   "past": [
@@ -469,8 +469,8 @@
       "is_past": 1,
       "status": "PUBLISHED",
       "organizer_id": "user_organizer",
-      "created_at": "2026-11-20 09:37:01",
-      "updated_at": "2026-11-20 09:37:01"
+      "created_at": "2026-11-20 10:39:15",
+      "updated_at": "2026-11-20 10:39:15"
     },
     {
       "id": "ev_past_neverending",
@@ -495,8 +495,8 @@
       "is_past": 1,
       "status": "PUBLISHED",
       "organizer_id": "user_organizer",
-      "created_at": "2026-11-20 09:37:01",
-      "updated_at": "2026-11-20 09:37:01"
+      "created_at": "2026-11-20 10:39:15",
+      "updated_at": "2026-11-20 10:39:15"
     },
     {
       "id": "ev_past_postmodern",
@@ -521,8 +521,8 @@
       "is_past": 1,
       "status": "PUBLISHED",
       "organizer_id": "user_organizer",
-      "created_at": "2026-11-20 09:37:01",
-      "updated_at": "2026-11-20 09:37:01"
+      "created_at": "2026-11-20 10:39:15",
+      "updated_at": "2026-11-20 10:39:15"
     },
     {
       "id": "ev_past_chaporadance",
@@ -547,8 +547,8 @@
       "is_past": 1,
       "status": "PUBLISHED",
       "organizer_id": "user_organizer",
-      "created_at": "2026-11-20 09:37:01",
-      "updated_at": "2026-11-20 09:37:01"
+      "created_at": "2026-11-20 10:39:15",
+      "updated_at": "2026-11-20 10:39:15"
     },
     {
       "id": "ev_past_tuestech",
@@ -573,8 +573,8 @@
       "is_past": 1,
       "status": "PUBLISHED",
       "organizer_id": "user_organizer",
-      "created_at": "2026-11-20 09:37:01",
-      "updated_at": "2026-11-20 09:37:01"
+      "created_at": "2026-11-20 10:39:15",
+      "updated_at": "2026-11-20 10:39:15"
     },
     {
       "id": "ev_past_sortedsounds",
@@ -599,8 +599,8 @@
       "is_past": 1,
       "status": "PUBLISHED",
       "organizer_id": "user_organizer",
-      "created_at": "2026-11-20 09:37:01",
-      "updated_at": "2026-11-20 09:37:01"
+      "created_at": "2026-11-20 10:39:15",
+      "updated_at": "2026-11-20 10:39:15"
     },
     {
       "id": "ev_past_crystalclear",
@@ -625,8 +625,8 @@
       "is_past": 1,
       "status": "PUBLISHED",
       "organizer_id": "user_organizer",
-      "created_at": "2026-11-20 09:37:01",
-      "updated_at": "2026-11-20 09:37:01"
+      "created_at": "2026-11-20 10:39:15",
+      "updated_at": "2026-11-20 10:39:15"
     },
     {
       "id": "ev_past_amorgnosis",
@@ -651,8 +651,8 @@
       "is_past": 1,
       "status": "PUBLISHED",
       "organizer_id": "user_organizer",
-      "created_at": "2026-11-20 09:37:01",
-      "updated_at": "2026-11-20 09:37:01"
+      "created_at": "2026-11-20 10:39:15",
+      "updated_at": "2026-11-20 10:39:15"
     }
   ],
   "demo": [
@@ -701,7 +701,7 @@
         "description": "Standard door access before 00:00 IST.",
         "price": 1999,
         "capacity": 250,
-        "sold_count": 113,
+        "sold_count": 112,
         "reserved_count": 0,
         "sale_state": "Available Now",
         "perks": [
@@ -711,8 +711,8 @@
         "min_per_order": 1,
         "max_per_order": 4,
         "sort_order": 1,
-        "created_at": "2026-11-20 09:37:01",
-        "available_qty": 137
+        "created_at": "2026-11-20 10:39:15",
+        "available_qty": 138
       },
       {
         "id": "tier_do_anytime",
@@ -732,7 +732,7 @@
         "min_per_order": 1,
         "max_per_order": 4,
         "sort_order": 2,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 136
       }
     ],
@@ -754,7 +754,7 @@
         "min_per_order": 1,
         "max_per_order": 4,
         "sort_order": 1,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 161
       },
       {
@@ -775,7 +775,7 @@
         "min_per_order": 1,
         "max_per_order": 2,
         "sort_order": 2,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 36
       }
     ],
@@ -783,7 +783,7 @@
       {
         "id": "tier_pv_eb",
         "event_id": "ev_primal_void",
-        "name": "Early Bird Pass",
+        "name": "Early Bird",
         "description": "Concluded allocation for loyal community early patrons.",
         "price": 1499,
         "capacity": 100,
@@ -797,19 +797,19 @@
         "min_per_order": 1,
         "max_per_order": 2,
         "sort_order": 1,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 0
       },
       {
         "id": "tier_pv_p1",
         "event_id": "ev_primal_void",
-        "name": "Full Gathering Pass (3 Days)",
-        "description": "Single wristband valid for all three nocturnal sessions at D Pedro cliff.",
-        "price": 2499,
-        "capacity": 300,
-        "sold_count": 95,
+        "name": "Phase 1",
+        "description": "Phase 1 pass for D Pedro clifftop sessions.",
+        "price": 3499,
+        "capacity": 200,
+        "sold_count": 200,
         "reserved_count": 0,
-        "sale_state": "Available Now",
+        "sale_state": "Tier Closed",
         "perks": [
           "3-Day Entry",
           "Clifftop Sunrise Access",
@@ -818,8 +818,29 @@
         "min_per_order": 1,
         "max_per_order": 4,
         "sort_order": 2,
-        "created_at": "2026-11-20 09:37:01",
-        "available_qty": 205
+        "created_at": "2026-11-20 10:39:15",
+        "available_qty": 0
+      },
+      {
+        "id": "tier_pv_t2",
+        "event_id": "ev_primal_void",
+        "name": "Tier 2",
+        "description": "Current active pass allocation for Primal Void.",
+        "price": 4999,
+        "capacity": 300,
+        "sold_count": 48,
+        "reserved_count": 0,
+        "sale_state": "Available Now",
+        "perks": [
+          "3-Day Full Entry",
+          "Precision Engineered Sound System",
+          "Visionary Arts & Healing Zone"
+        ],
+        "min_per_order": 1,
+        "max_per_order": 6,
+        "sort_order": 3,
+        "created_at": "2026-11-20 10:39:15",
+        "available_qty": 252
       }
     ],
     "ev_unmada_nye": [
@@ -841,7 +862,7 @@
         "min_per_order": 1,
         "max_per_order": 4,
         "sort_order": 1,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 0
       },
       {
@@ -862,7 +883,7 @@
         "min_per_order": 1,
         "max_per_order": 6,
         "sort_order": 2,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 218
       },
       {
@@ -883,7 +904,7 @@
         "min_per_order": 1,
         "max_per_order": 6,
         "sort_order": 3,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 455
       },
       {
@@ -904,7 +925,7 @@
         "min_per_order": 1,
         "max_per_order": 4,
         "sort_order": 4,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 62
       },
       {
@@ -925,7 +946,7 @@
         "min_per_order": 1,
         "max_per_order": 1,
         "sort_order": 5,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 7
       }
     ],
@@ -947,7 +968,7 @@
         "min_per_order": 1,
         "max_per_order": 2,
         "sort_order": 1,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 0
       },
       {
@@ -968,7 +989,7 @@
         "min_per_order": 1,
         "max_per_order": 4,
         "sort_order": 2,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 212
       },
       {
@@ -989,7 +1010,7 @@
         "min_per_order": 1,
         "max_per_order": 4,
         "sort_order": 3,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 41
       }
     ],
@@ -1011,7 +1032,7 @@
         "min_per_order": 1,
         "max_per_order": 2,
         "sort_order": 1,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 0
       },
       {
@@ -1032,7 +1053,7 @@
         "min_per_order": 1,
         "max_per_order": 4,
         "sort_order": 2,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 258
       },
       {
@@ -1053,7 +1074,7 @@
         "min_per_order": 1,
         "max_per_order": 2,
         "sort_order": 3,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 29
       }
     ],
@@ -1075,7 +1096,7 @@
         "min_per_order": 1,
         "max_per_order": 4,
         "sort_order": 1,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 128
       },
       {
@@ -1095,7 +1116,7 @@
         "min_per_order": 1,
         "max_per_order": 4,
         "sort_order": 2,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 125
       }
     ],
@@ -1118,7 +1139,7 @@
         "min_per_order": 1,
         "max_per_order": 6,
         "sort_order": 1,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 185
       },
       {
@@ -1139,7 +1160,7 @@
         "min_per_order": 1,
         "max_per_order": 6,
         "sort_order": 2,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 208
       }
     ],
@@ -1161,7 +1182,7 @@
         "min_per_order": 1,
         "max_per_order": 2,
         "sort_order": 1,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 0
       },
       {
@@ -1182,7 +1203,7 @@
         "min_per_order": 1,
         "max_per_order": 4,
         "sort_order": 2,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 183
       },
       {
@@ -1203,7 +1224,7 @@
         "min_per_order": 1,
         "max_per_order": 2,
         "sort_order": 3,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 23
       }
     ],
@@ -1225,7 +1246,7 @@
         "min_per_order": 1,
         "max_per_order": 4,
         "sort_order": 1,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 117
       },
       {
@@ -1245,7 +1266,7 @@
         "min_per_order": 1,
         "max_per_order": 4,
         "sort_order": 2,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 135
       }
     ],
@@ -1267,7 +1288,7 @@
         "min_per_order": 1,
         "max_per_order": 4,
         "sort_order": 1,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 154
       },
       {
@@ -1287,7 +1308,7 @@
         "min_per_order": 1,
         "max_per_order": 4,
         "sort_order": 2,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 260
       },
       {
@@ -1308,7 +1329,7 @@
         "min_per_order": 1,
         "max_per_order": 2,
         "sort_order": 3,
-        "created_at": "2026-11-20 09:37:01",
+        "created_at": "2026-11-20 10:39:15",
         "available_qty": 32
       }
     ]

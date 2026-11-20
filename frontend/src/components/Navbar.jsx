@@ -1,9 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext.jsx';
 import { useSocket } from '../context/SocketContext.jsx';
-import { Search, ShoppingBag, ChevronDown, Menu, X, ShieldCheck, QrCode, LayoutDashboard, LogOut, Radio } from 'lucide-react';
+import { Search, ShoppingBag, ChevronDown, Menu, X, ShieldCheck, QrCode, LayoutDashboard, LogOut, Radio, User } from 'lucide-react';
 
 export default function Navbar({
+  onOpenLogin,
   onOpenTickets,
   onOpenOrganizer,
   onOpenPromoter,
@@ -199,7 +200,13 @@ export default function Navbar({
           {/* Official Axess Login Button with brand/login-icon.png */}
           <div className="relative" ref={dropdownRef}>
             <button
-              onClick={() => setDropdownOpen(!dropdownOpen)}
+              onClick={() => {
+                if (!isAuthenticated) {
+                  onOpenLogin?.();
+                } else {
+                  setDropdownOpen(!dropdownOpen);
+                }
+              }}
               aria-label="Login"
               className="flex h-9 w-9 items-center justify-center rounded-full border border-white bg-white text-black hover:opacity-90 transition-all active:scale-95 lg:h-10 lg:w-auto lg:gap-1.5 lg:rounded-[10px] lg:px-4"
             >
@@ -211,8 +218,10 @@ export default function Navbar({
                 className="h-[18px] w-[18px] object-contain"
               />
               <span className="hidden items-center gap-1 text-base font-normal lg:flex text-black">
-                {isAuthenticated ? role : 'Login'}
-                <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${dropdownOpen ? 'rotate-180' : ''}`} />
+                {isAuthenticated ? (role === 'ADMIN' ? 'App Owner' : role) : 'Login'}
+                {isAuthenticated && (
+                  <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${dropdownOpen ? 'rotate-180' : ''}`} />
+                )}
               </span>
             </button>
 
@@ -224,7 +233,7 @@ export default function Navbar({
                   <p className="text-white font-medium truncate mt-0.5">{user?.name || 'Public Guest'}</p>
                   <p className="text-[11px] text-[#848484] truncate">{user?.email || 'Unauthenticated Visitor'}</p>
                   <div className="mt-1.5 inline-flex items-center px-2 py-0.5 rounded bg-black border border-[#212121] text-[10px] font-mono text-[#848484]">
-                    Role: {role}
+                    Role: {role === 'ADMIN' ? 'App Owner' : role}
                   </div>
                 </div>
 
@@ -255,20 +264,28 @@ export default function Navbar({
                   ))}
                 </div>
 
-                {isAuthenticated && (
-                  <div className="pt-2 mt-2 border-t border-[#212121]">
-                    <button
-                      onClick={() => {
-                        logout();
-                        setDropdownOpen(false);
-                      }}
-                      className="w-full text-left px-3 py-2 rounded-lg text-[#848484] hover:text-white hover:bg-[#161616] flex items-center gap-2 text-[12px] transition-colors"
-                    >
-                      <LogOut className="w-3.5 h-3.5" />
-                      <span>Log Out</span>
-                    </button>
-                  </div>
-                )}
+                <div className="pt-2 mt-2 border-t border-[#212121] flex flex-col gap-1">
+                  <button
+                    onClick={() => {
+                      setDropdownOpen(false);
+                      onOpenLogin?.();
+                    }}
+                    className="w-full text-left px-3 py-2 rounded-lg text-white hover:bg-[#161616] flex items-center gap-2 text-[12px] transition-colors font-medium"
+                  >
+                    <User className="w-3.5 h-3.5 text-[#AAA]" />
+                    <span>Open Role Selection Modal</span>
+                  </button>
+                  <button
+                    onClick={() => {
+                      logout();
+                      setDropdownOpen(false);
+                    }}
+                    className="w-full text-left px-3 py-2 rounded-lg text-red-400 hover:text-red-300 hover:bg-[#1c1212] flex items-center gap-2 text-[12px] transition-colors"
+                  >
+                    <LogOut className="w-3.5 h-3.5" />
+                    <span>Log Out</span>
+                  </button>
+                </div>
               </div>
             )}
           </div>
@@ -332,6 +349,23 @@ export default function Navbar({
           </nav>
 
           <div className="space-y-3 border-t border-[#212121] pt-3">
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                onOpenLogin?.();
+              }}
+              className="w-full py-2 rounded-xl bg-white text-black font-semibold text-center text-sm"
+            >
+              Select Role / Login Screen
+            </button>
+            <div>
+              <p className="mb-1 text-[10px] uppercase tracking-widest text-[#606060]">App Owner / Master</p>
+              <div className="flex gap-4">
+                <button onClick={() => { switchRole('ADMIN'); setMobileMenuOpen(false); onOpenAdmin(); }} className="text-sm text-[#D8B4FE] hover:text-white font-semibold">
+                  App Owner Master Control
+                </button>
+              </div>
+            </div>
             <div>
               <p className="mb-1 text-[10px] uppercase tracking-widest text-[#606060]">Users</p>
               <div className="flex gap-4">
