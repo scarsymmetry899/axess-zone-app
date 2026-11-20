@@ -1,0 +1,17 @@
+{
+  "name": "axess-app",
+  "version": "1.0.0",
+  "description": "Full-stack live event discovery, ticketing, and partner management application modeled after Axess (axess.zone)",
+  "scripts": {
+    "dev": "concurrently -n \"backend,frontend\" -c \"white,gray\" \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend",
+    "start": "node backend/src/server.js",
+    "seed": "node backend/src/db.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.5",
+    "playwright": "^1.65.1"
+  }
+}

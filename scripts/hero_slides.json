@@ -1,0 +1,328 @@
+[
+  {
+    "id": "5e252f1e-50e7-49c1-8719-c5a8fe3b3599",
+    "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+    "name": "UNMADA VARA  NYE - The Pulse of Prāṇa",
+    "slug": "unmada-vara-goa",
+    "description": "Unmada Vara: The Pulse of Prāṇa\n\nLast time, we stepped into the blessing of madness — into intensity, into letting go, into something raw and real.\n\nThis time, we go deeper.\n\nThe Pulse of Prāṇa is about the life-force that moves through everything — through sound, through people, through moments that stay with you long after they pass. It’s not about escaping… It’s about feeling more. Being more present. More alive.\n\nUnmada Vara has always been about coming together with intention — not just to celebrate, but to reset, reconnect, and return to something real within ourselves.\n\nThis New Year’s, we gather again — for that shared pulse you can’t quite explain, only feel.\n\nTickets are now live on all platforms.\n\nTier 2 is priced at INR 4,000/-.\n\nThe line-up, as always, will never disappoint — worth the wait. Announcements coming soon.\n\nWe come together on 31st December 2026 into 1st January 2027 for a New Year’s Eve gathering to reset mind, body, and soul.\n\nLocation: Goa Venue: To be announced\n\nMore details soon",
+    "hasGst": false,
+    "bannerUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1790489323768-UV_AXESS_BANNER_V01-banner-1790489323506.webp",
+    "posterUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1790489303512-uv_27_axess_post-poster-1790489302740.webp",
+    "thumbnailUrl": null,
+    "locationId": "34abd782-aaa2-4011-bc68-173d0c20868b",
+    "startAt": "2026-12-31T10:30:00.000Z",
+    "endAt": "2027-01-01T04:00:00.000Z",
+    "status": "Published",
+    "mode": "Public",
+    "commissionRate": null,
+    "terms": null,
+    "lineup": null,
+    "source": "axess-v2",
+    "legacyEventId": "235850",
+    "rejectionReason": null,
+    "createdBy": "8a7bc712-6b58-41ac-99d6-1cac9b2b047d",
+    "createdAt": "2026-08-04T03:20:48.286Z",
+    "updatedAt": "2026-10-26T19:00:53.219Z",
+    "deletedAt": null,
+    "location": {
+      "id": "34abd782-aaa2-4011-bc68-173d0c20868b",
+      "name": "Goa",
+      "city": "Goa",
+      "country": "India"
+    },
+    "tenant": {
+      "defaultTimezone": "Asia/Kolkata"
+    },
+    "eventTickets": [
+      {
+        "id": "6377e304-863f-441d-87e3-a1d65ef8e6a2",
+        "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+        "eventId": "5e252f1e-50e7-49c1-8719-c5a8fe3b3599",
+        "ticketTypeId": "99a61551-883f-4553-b8f0-3911652e2ea2",
+        "total": 500,
+        "available": 400,
+        "createdAt": "2026-08-04T03:20:48.290Z",
+        "updatedAt": "2026-10-26T19:00:53.319Z",
+        "deletedAt": null,
+        "ticketType": {
+          "name": "Tier 1",
+          "amount": "2999",
+          "currency": "INR"
+        }
+      }
+    ],
+    "timeZone": "Asia/Kolkata"
+  },
+  {
+    "id": "0a33febf-6106-4ee7-be21-ff33faff4c75",
+    "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+    "name": "Primal Void",
+    "slug": "primal-void-24-december-2026-goa-bfkd7n",
+    "description": "Dimensional Magic Tribe Presents – Primal Void\n\nWhen? 📆 24 – 25 December 2026\n\nWhere? 📍D Pedro , Goa\n\nLineup :\n\n★彡[TBA]彡\n\nTicket Prices Out Now !",
+    "hasGst": true,
+    "bannerUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1786374548635-Primal_void2-banner-1786374548126.webp",
+    "posterUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1786374542167-Primal_void_1-poster-1786374541397.webp",
+    "thumbnailUrl": null,
+    "locationId": "f067ae82-b140-48ec-8fbf-8ee3e2a747c8",
+    "startAt": "2026-12-24T14:30:00.000Z",
+    "endAt": "2026-12-26T04:30:00.000Z",
+    "status": "Published",
+    "mode": "Public",
+    "commissionRate": null,
+    "terms": null,
+    "lineup": null,
+    "source": null,
+    "legacyEventId": null,
+    "rejectionReason": null,
+    "createdBy": "dc617ca5-8ed1-4d7e-ac88-feb9532a471f",
+    "createdAt": "2026-08-10T15:12:32.937Z",
+    "updatedAt": "2026-09-14T16:19:02.554Z",
+    "deletedAt": null,
+    "location": {
+      "id": "f067ae82-b140-48ec-8fbf-8ee3e2a747c8",
+      "name": "D Pedro",
+      "city": "Goa",
+      "country": "India"
+    },
+    "tenant": {
+      "defaultTimezone": "Asia/Kolkata"
+    },
+    "eventTickets": [
+      {
+        "id": "95f6bb11-57c3-4bd3-9c2e-9527c7b884d3",
+        "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+        "eventId": "0a33febf-6106-4ee7-be21-ff33faff4c75",
+        "ticketTypeId": "f9712eed-df7d-48c0-ba9c-8676558467db",
+        "total": 100,
+        "available": 95,
+        "createdAt": "2026-08-10T15:12:33.006Z",
+        "updatedAt": "2026-11-11T19:14:06.178Z",
+        "deletedAt": null,
+        "ticketType": {
+          "name": "Early Bird",
+          "amount": "1499",
+          "currency": "INR"
+        }
+      }
+    ],
+    "timeZone": "Asia/Kolkata"
+  },
+  {
+    "id": "bd8cf97a-8b0f-4b09-9855-6a827aa29727",
+    "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+    "name": "Perseverance Festival",
+    "slug": "perseverance-goa",
+    "description": "Psyrituals , Akkadian Project Presents - Perseverance Festival\n\n 📆 26 - 28 December 2026\n\nVENUE -📍 D Pedro , Goa\n\nPERSEVERANCE FESTIVAL\n26th - 27th December 2026 • Goa\n\nIn Collaboration with @_akkadianproject & @psyrituals.records\n\nThe time has come to start a new chapter.\n\nDedicated to the details that matter most — a precisely engineered sound system, where artists who have persevered with their craft for decades and more will weave conceptual music into a journey that transcends us to the core of our inner beings.\n\nWith visionary art that connects us to higher subtle dimensions, sacred fire performances to ignite our inner flame and reveal our path of self-discovery…\n\nPerseverance Festival is for the dreamers, the wanderers, the seekers, and the visionaries — for those who walk the edge between worlds, who hear the call of the wild jungle and the pulse of the cosmos, who refuse to dim their inner light.\n\nIt is a sanctuary for the souls brave enough to surrender, to dance through the shadows and the stars, to dissolve the boundaries between self and universe.\n\nLet the fire awaken ancient truths. Let the visions guide you home.\n\nUnder the same eternal sky, we endure. We transform. We rise.\n\nThis is Perseverance.\n\nVenue: @dpedroinn Mandrem, Goa\n\n⚡ SUPER EARLY BIRD IS LIVE — Only first 40 tickets at the lowest price.\nOnce they’re gone, the price rises.\n\nGrab yours now before they disappear:",
+    "hasGst": false,
+    "bannerUrl": "https://axess-dev.s3.ap-south-1.amazonaws.com/axess-images/migrated-events/perseverance-goa-banner.png",
+    "posterUrl": "https://axess-dev.s3.ap-south-1.amazonaws.com/axess-images/migrated-events/perseverance-goa-poster.png",
+    "thumbnailUrl": null,
+    "locationId": "f067ae82-b140-48ec-8fbf-8ee3e2a747c8",
+    "startAt": "2026-12-26T14:00:00.000Z",
+    "endAt": "2026-12-28T04:00:00.000Z",
+    "status": "Published",
+    "mode": "Public",
+    "commissionRate": null,
+    "terms": null,
+    "lineup": "TBA",
+    "source": "axess-v2",
+    "legacyEventId": "244535",
+    "rejectionReason": null,
+    "createdBy": "b3527162-2506-475d-89ac-bdfa67a55a50",
+    "createdAt": "2026-08-04T03:20:48.246Z",
+    "updatedAt": "2026-09-10T14:11:39.342Z",
+    "deletedAt": null,
+    "location": {
+      "id": "f067ae82-b140-48ec-8fbf-8ee3e2a747c8",
+      "name": "D Pedro",
+      "city": "Goa",
+      "country": "India"
+    },
+    "tenant": {
+      "defaultTimezone": "Asia/Kolkata"
+    },
+    "eventTickets": [
+      {
+        "id": "b92dc353-d2b1-4f96-836b-fbd08650d64d",
+        "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+        "eventId": "bd8cf97a-8b0f-4b09-9855-6a827aa29727",
+        "ticketTypeId": "561857dd-c43a-4b33-aff0-f2ac3dca057e",
+        "total": 10,
+        "available": 0,
+        "createdAt": "2026-08-04T03:20:48.254Z",
+        "updatedAt": "2026-11-17T13:55:32.083Z",
+        "deletedAt": null,
+        "ticketType": {
+          "name": "Early Bird - GA ",
+          "amount": "1999",
+          "currency": "INR"
+        }
+      }
+    ],
+    "timeZone": "Asia/Kolkata"
+  },
+  {
+    "id": "b70c4aa7-58a7-4c51-93f6-a0b0e675aa7d",
+    "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+    "name": "Vanaghotra The Decade Ritual",
+    "slug": "vanaghotra-the-decade-ritual-goa",
+    "description": "Vanaghotra Presents - Vanaghotra The Decade Ritual\r\n\r\nWhen? 📆 31 December 2026\r\n\r\nWhere? 📍 D Pedro , Goa\r\n\r\nLineup :\r\n\r\n★彡[TBA]彡\r\n\r\nTicket Prices Out Now !!",
+    "hasGst": false,
+    "bannerUrl": "https://axess-dev.s3.ap-south-1.amazonaws.com/axess-images/migrated-events/vanaghotra-the-decade-ritual-goa-banner.png",
+    "posterUrl": "https://axess-dev.s3.ap-south-1.amazonaws.com/axess-images/migrated-events/vanaghotra-the-decade-ritual-goa-poster.jpeg",
+    "thumbnailUrl": null,
+    "locationId": "ee8ef744-b943-4703-835c-320f0f3ea009",
+    "startAt": "2026-12-31T12:00:00.000Z",
+    "endAt": "2027-01-01T04:30:00.000Z",
+    "status": "Published",
+    "mode": "Public",
+    "commissionRate": null,
+    "terms": null,
+    "lineup": "TBA",
+    "source": "axess-v2",
+    "legacyEventId": "234786",
+    "rejectionReason": null,
+    "createdBy": "d13beb53-da79-4fcd-9d80-8b81d3bc2399",
+    "createdAt": "2026-08-04T03:20:48.300Z",
+    "updatedAt": "2026-11-02T12:28:22.039Z",
+    "deletedAt": null,
+    "location": {
+      "id": "ee8ef744-b943-4703-835c-320f0f3ea009",
+      "name": "Dpedro",
+      "city": "Goa",
+      "country": "India"
+    },
+    "tenant": {
+      "defaultTimezone": "Asia/Kolkata"
+    },
+    "eventTickets": [
+      {
+        "id": "15eb5468-97fc-472a-9ed9-431901a51d20",
+        "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+        "eventId": "b70c4aa7-58a7-4c51-93f6-a0b0e675aa7d",
+        "ticketTypeId": "1d9c7eaf-cf93-4148-9354-34eb1b6a15f2",
+        "total": 50,
+        "available": 50,
+        "createdAt": "2026-08-04T03:20:48.304Z",
+        "updatedAt": "2026-11-02T12:28:22.055Z",
+        "deletedAt": null,
+        "ticketType": {
+          "name": "Early Birds - GA ",
+          "amount": "1999",
+          "currency": "INR"
+        }
+      }
+    ],
+    "timeZone": "Asia/Kolkata"
+  },
+  {
+    "id": "b6a22a7e-553c-4fbb-a057-adc1313e48cf",
+    "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+    "name": "Ritual Of The Void Goa",
+    "slug": "ritual-of-the-void-6-goa",
+    "description": "Vasuki Vani Entertainment Presents - Ritual Of The Void\r\n\r\nWhen? 📆 28 - 29 December 2026\r\n\r\nWhere? 📍 D pedro , Goa\r\n\r\nLineup :\r\n\r\n★彡[TBA]彡\r\n\r\nTicket Prices Out Now !!",
+    "hasGst": false,
+    "bannerUrl": "https://axess-dev.s3.ap-south-1.amazonaws.com/axess-images/migrated-events/ritual-of-the-void-6-goa-banner.jpeg",
+    "posterUrl": "https://axess-dev.s3.ap-south-1.amazonaws.com/axess-images/migrated-events/ritual-of-the-void-6-goa-poster.jpeg",
+    "thumbnailUrl": null,
+    "locationId": "ee8ef744-b943-4703-835c-320f0f3ea009",
+    "startAt": "2026-12-28T14:30:00.000Z",
+    "endAt": "2026-12-29T03:00:00.000Z",
+    "status": "Published",
+    "mode": "Public",
+    "commissionRate": null,
+    "terms": null,
+    "lineup": "TBA",
+    "source": "axess-v2",
+    "legacyEventId": "245727",
+    "rejectionReason": null,
+    "createdBy": "284a76d1-5f86-46f8-bbea-e7093368ed7e",
+    "createdAt": "2026-08-04T03:20:48.263Z",
+    "updatedAt": "2026-10-14T09:56:54.284Z",
+    "deletedAt": null,
+    "location": {
+      "id": "ee8ef744-b943-4703-835c-320f0f3ea009",
+      "name": "Dpedro",
+      "city": "Goa",
+      "country": "India"
+    },
+    "tenant": {
+      "defaultTimezone": "Asia/Kolkata"
+    },
+    "eventTickets": [
+      {
+        "id": "06479886-92b8-4d3b-a4f4-3ac47bed61cb",
+        "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+        "eventId": "b6a22a7e-553c-4fbb-a057-adc1313e48cf",
+        "ticketTypeId": "f9611199-97e1-4c94-803c-2cd2df3816f3",
+        "total": 50,
+        "available": 45,
+        "createdAt": "2026-08-04T03:20:48.267Z",
+        "updatedAt": "2026-10-14T09:56:54.374Z",
+        "deletedAt": null,
+        "ticketType": {
+          "name": "Early Birds - GA ",
+          "amount": "2500",
+          "currency": "INR"
+        }
+      }
+    ],
+    "timeZone": "Asia/Kolkata"
+  },
+  {
+    "id": "3e75245c-f022-4e9a-aeb7-1f44abbae07e",
+    "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+    "name": "Dark Obscura",
+    "slug": "dark-obscura-k58zoa",
+    "description": "THE WAIT IS OVER. THE DARKNESS IS COMPLETE.\n\nMAGIK BEYOND MUSIC UNLEASHES THE FULL & FINAL LINEUP FOR DARK OBSCURA.\n\nA deadly collision of twisted frequencies, savage rhythms and underground forces. No boundaries. No mercy. Just pure, unfiltered DARK PSYCHEDELIC DESTRUCTION.\n\nThe artists are locked. The energy is set. The darkness is calling.\n\nTHIS IS NOT JUST ANOTHER PARTY. THIS IS A DESCENT INTO THE OBSCURA.\n\nDARK OBSCURA\n21st NOVEMBER | SATURDAY 9PM onwards\nD-PEDRO MANDREM, GOA\n\nVISUALS: @vj.brahman\nSTAGE DECO: @psyde.eye",
+    "hasGst": true,
+    "bannerUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1793193399009-IMG_1104-banner-1793193398570.webp",
+    "posterUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1794902930662-IMG_1643-poster-1794902929792.webp",
+    "thumbnailUrl": null,
+    "locationId": "f067ae82-b140-48ec-8fbf-8ee3e2a747c8",
+    "startAt": "2026-11-21T15:30:00.000Z",
+    "endAt": "2026-11-22T02:00:00.000Z",
+    "status": "Published",
+    "mode": "Public",
+    "commissionRate": null,
+    "terms": {
+      "content": "1. No Refund Policy\nAll tickets are non-refundable and non-transferable, except in the event of cancellation or where otherwise required by applicable law. In case of event cancellation, refund terms will be communicated by the organiser.\n\n2. Age Restriction & Entry Policy\nEntry is restricted to guests aged 18 years and above. Valid government-issued photo ID may be required at the entrance. The organiser reserves the right to refuse entry to anyone violating event rules or displaying inappropriate behaviour.\n\n3. Right of Admission & Event Changes\nThe organiser reserves the right to refuse admission in cases of misconduct, safety concerns, or violation of event rules. Artist lineups, set times, and other event details may change due to unforeseen circumstances."
+    },
+    "lineup": null,
+    "source": null,
+    "legacyEventId": null,
+    "rejectionReason": null,
+    "createdBy": "452bb69c-8b41-42ec-b9fd-116bb51e686a",
+    "createdAt": "2026-10-28T13:27:23.061Z",
+    "updatedAt": "2026-11-17T08:28:32.965Z",
+    "deletedAt": null,
+    "location": {
+      "id": "f067ae82-b140-48ec-8fbf-8ee3e2a747c8",
+      "name": "D Pedro",
+      "city": "Goa",
+      "country": "India"
+    },
+    "tenant": {
+      "defaultTimezone": "Asia/Kolkata"
+    },
+    "eventTickets": [
+      {
+        "id": "77b43c53-6a80-4ff0-8c3e-46e0664c87fc",
+        "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+        "eventId": "3e75245c-f022-4e9a-aeb7-1f44abbae07e",
+        "ticketTypeId": "13cc0006-3a0e-48f3-b0e0-be7894f0e52c",
+        "total": 4,
+        "available": 0,
+        "createdAt": "2026-10-28T13:27:23.544Z",
+        "updatedAt": "2026-11-17T08:28:33.116Z",
+        "deletedAt": null,
+        "ticketType": {
+          "name": "2-tier",
+          "amount": "1999",
+          "currency": "INR"
+        }
+      }
+    ],
+    "timeZone": "Asia/Kolkata"
+  }
+]

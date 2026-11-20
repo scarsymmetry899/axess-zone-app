@@ -1,0 +1,167 @@
+[
+  {
+    "id": "d49d953f-81b1-4220-9307-b00c2090bad5",
+    "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+    "name": "Arts & Theatre",
+    "icon": null,
+    "parentId": null,
+    "isGlobal": true,
+    "isHidden": false,
+    "createdAt": "2026-07-30T14:24:46.747Z",
+    "updatedAt": "2026-07-30T14:26:00.914Z",
+    "deletedAt": null,
+    "_count": {
+      "events": 9
+    }
+  },
+  {
+    "id": "6811a5cf-2b22-4e0f-bdc7-bb8478b39df9",
+    "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+    "name": "Community",
+    "icon": null,
+    "parentId": null,
+    "isGlobal": true,
+    "isHidden": false,
+    "createdAt": "2026-07-30T14:26:00.930Z",
+    "updatedAt": "2026-07-30T14:26:00.930Z",
+    "deletedAt": null,
+    "_count": {
+      "events": 57
+    }
+  },
+  {
+    "id": "3a31eb50-23a4-4a5f-b3b7-6a4018825748",
+    "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+    "name": "Festival",
+    "icon": null,
+    "parentId": null,
+    "isGlobal": true,
+    "isHidden": false,
+    "createdAt": "2026-07-30T14:24:46.763Z",
+    "updatedAt": "2026-07-30T14:26:00.924Z",
+    "deletedAt": null,
+    "_count": {
+      "events": 76
+    }
+  },
+  {
+    "id": "5870b21f-d93e-42b5-8d1e-d26a3612e047",
+    "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+    "name": "Food & Drink",
+    "icon": null,
+    "parentId": null,
+    "isGlobal": true,
+    "isHidden": false,
+    "createdAt": "2026-07-30T14:24:46.750Z",
+    "updatedAt": "2026-07-30T14:26:00.916Z",
+    "deletedAt": null,
+    "_count": {
+      "events": 58
+    }
+  },
+  {
+    "id": "ab08f0a2-d4e5-46b9-b778-bfd18353a82f",
+    "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+    "name": "Music",
+    "icon": null,
+    "parentId": null,
+    "isGlobal": true,
+    "isHidden": false,
+    "createdAt": "2026-07-30T14:24:46.736Z",
+    "updatedAt": "2026-07-30T14:26:00.904Z",
+    "deletedAt": null,
+    "_count": {
+      "events": 93
+    }
+  },
+  {
+    "id": "83db39c4-8dfb-4a33-8a93-f6389e1d56fc",
+    "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+    "name": "Networking",
+    "icon": null,
+    "parentId": null,
+    "isGlobal": true,
+    "isHidden": false,
+    "createdAt": "2026-07-30T14:26:00.932Z",
+    "updatedAt": "2026-07-30T14:26:00.932Z",
+    "deletedAt": null,
+    "_count": {
+      "events": 23
+    }
+  },
+  {
+    "id": "39a448a0-9ead-4068-8542-70aa5faeb3f0",
+    "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+    "name": "Nightlife",
+    "icon": null,
+    "parentId": null,
+    "isGlobal": true,
+    "isHidden": false,
+    "createdAt": "2026-07-30T14:24:46.757Z",
+    "updatedAt": "2026-07-30T14:26:00.920Z",
+    "deletedAt": null,
+    "_count": {
+      "events": 94
+    }
+  },
+  {
+    "id": "7808fdd4-c577-4d0d-8fc1-a0ed32f681e7",
+    "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+    "name": "Other",
+    "icon": null,
+    "parentId": null,
+    "isGlobal": true,
+    "isHidden": false,
+    "createdAt": "2026-07-30T14:24:46.771Z",
+    "updatedAt": "2026-07-30T14:26:00.936Z",
+    "deletedAt": null,
+    "_count": {
+      "events": 7
+    }
+  },
+  {
+    "id": "d52aec7e-5274-4cc0-ae21-5534e3e507f7",
+    "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+    "name": "Technology",
+    "icon": null,
+    "parentId": null,
+    "isGlobal": true,
+    "isHidden": false,
+    "createdAt": "2026-07-30T14:24:46.744Z",
+    "updatedAt": "2026-07-30T14:26:00.912Z",
+    "deletedAt": null,
+    "_count": {
+      "events": 3
+    }
+  },
+  {
+    "id": "af69daf8-4579-40dd-939b-7ef480ffcb81",
+    "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+    "name": "Wellness",
+    "icon": null,
+    "parentId": null,
+    "isGlobal": true,
+    "isHidden": false,
+    "createdAt": "2026-07-30T14:26:00.934Z",
+    "updatedAt": "2026-07-30T14:26:00.934Z",
+    "deletedAt": null,
+    "_count": {
+      "events": 8
+    }
+  },
+  {
+    "id": "467944ab-a5f9-48b1-95ea-05b80267ba97",
+    "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+    "name": "Workshop",
+    "icon": null,
+    "parentId": null,
+    "isGlobal": true,
+    "isHidden": false,
+    "createdAt": "2026-07-30T14:24:46.765Z",
+    "updatedAt": "2026-07-30T14:26:00.926Z",
+    "deletedAt": null,
+    "_count": {
+      "events": 4
+    }
+  }
+]

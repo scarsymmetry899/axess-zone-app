@@ -1,0 +1,157 @@
+{
+  "data": [
+    {
+      "id": "ee8ef744-b943-4703-835c-320f0f3ea009",
+      "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+      "name": "Dpedro",
+      "description": null,
+      "address": null,
+      "city": "Goa",
+      "state": null,
+      "country": "India",
+      "postalCode": null,
+      "parentId": null,
+      "latitude": 15.3004543,
+      "longitude": 74.0855134,
+      "createdAt": "2026-08-04T03:20:48.257Z",
+      "updatedAt": "2026-08-07T03:35:52.163Z",
+      "deletedAt": null,
+      "_count": {
+        "events": 10
+      },
+      "timeZone": "Asia/Kolkata"
+    },
+    {
+      "id": "f067ae82-b140-48ec-8fbf-8ee3e2a747c8",
+      "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+      "name": "D Pedro",
+      "description": null,
+      "address": null,
+      "city": "Goa",
+      "state": null,
+      "country": "India",
+      "postalCode": null,
+      "parentId": null,
+      "latitude": 15.3004543,
+      "longitude": 74.0855134,
+      "createdAt": "2026-08-04T03:20:48.229Z",
+      "updatedAt": "2026-08-07T03:36:29.362Z",
+      "deletedAt": null,
+      "_count": {
+        "events": 7
+      },
+      "timeZone": "Asia/Kolkata"
+    },
+    {
+      "id": "34abd782-aaa2-4011-bc68-173d0c20868b",
+      "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+      "name": "Goa",
+      "description": null,
+      "address": null,
+      "city": "Goa",
+      "state": null,
+      "country": "India",
+      "postalCode": null,
+      "parentId": null,
+      "latitude": 15.2993,
+      "longitude": 74.124,
+      "createdAt": "2026-07-30T14:24:46.880Z",
+      "updatedAt": "2026-07-30T14:24:46.880Z",
+      "deletedAt": null,
+      "_count": {
+        "events": 51
+      },
+      "timeZone": "Asia/Kolkata"
+    },
+    {
+      "id": "c9e83553-c3c7-4fc2-8e77-67adb15a7b31",
+      "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+      "name": "GYLT",
+      "description": null,
+      "address": "",
+      "city": "Bangalore",
+      "state": null,
+      "country": null,
+      "postalCode": null,
+      "parentId": null,
+      "latitude": null,
+      "longitude": null,
+      "createdAt": "2026-08-13T11:06:35.548Z",
+      "updatedAt": "2026-08-13T11:06:35.548Z",
+      "deletedAt": null,
+      "_count": {
+        "events": 4
+      },
+      "timeZone": "Asia/Kolkata"
+    },
+    {
+      "id": "07ea4c1e-d8f2-4edb-8c3d-d3bdc48270d6",
+      "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+      "name": "House Of Chapora",
+      "description": null,
+      "address": null,
+      "city": "Goa",
+      "state": null,
+      "country": "India",
+      "postalCode": null,
+      "parentId": null,
+      "latitude": 15.6080004,
+      "longitude": 73.7386224,
+      "createdAt": "2026-08-04T03:20:48.141Z",
+      "updatedAt": "2026-08-07T03:35:34.405Z",
+      "deletedAt": null,
+      "_count": {
+        "events": 39
+      },
+      "timeZone": "Asia/Kolkata"
+    },
+    {
+      "id": "a1e330d9-186f-40c4-993d-ee61eb31f61a",
+      "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+      "name": "Oceans Pirates Cafe",
+      "description": null,
+      "address": null,
+      "city": "Goa",
+      "state": null,
+      "country": "India",
+      "postalCode": null,
+      "parentId": null,
+      "latitude": 15.3004543,
+      "longitude": 74.0855134,
+      "createdAt": "2026-08-04T03:20:48.196Z",
+      "updatedAt": "2026-08-07T03:35:43.540Z",
+      "deletedAt": null,
+      "_count": {
+        "events": 16
+      },
+      "timeZone": "Asia/Kolkata"
+    },
+    {
+      "id": "483176f7-e5bf-4eb7-b0c5-4f48f3860143",
+      "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+      "name": "Parvati Valley",
+      "description": null,
+      "address": "",
+      "city": "Kasol",
+      "state": null,
+      "country": null,
+      "postalCode": null,
+      "parentId": null,
+      "latitude": null,
+      "longitude": null,
+      "createdAt": "2026-09-14T08:40:24.419Z",
+      "updatedAt": "2026-09-14T08:40:24.419Z",
+      "deletedAt": null,
+      "_count": {
+        "events": 1
+      },
+      "timeZone": "Asia/Kolkata"
+    }
+  ],
+  "meta": {
+    "total": 7,
+    "page": 1,
+    "limit": 100,
+    "totalPages": 1
+  }
+}

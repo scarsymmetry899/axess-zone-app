@@ -1,0 +1,1965 @@
+{
+  "data": [
+    {
+      "id": "3e75245c-f022-4e9a-aeb7-1f44abbae07e",
+      "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+      "name": "Dark Obscura",
+      "slug": "dark-obscura-k58zoa",
+      "description": "THE WAIT IS OVER. THE DARKNESS IS COMPLETE.\n\nMAGIK BEYOND MUSIC UNLEASHES THE FULL & FINAL LINEUP FOR DARK OBSCURA.\n\nA deadly collision of twisted frequencies, savage rhythms and underground forces. No boundaries. No mercy. Just pure, unfiltered DARK PSYCHEDELIC DESTRUCTION.\n\nThe artists are locked. The energy is set. The darkness is calling.\n\nTHIS IS NOT JUST ANOTHER PARTY. THIS IS A DESCENT INTO THE OBSCURA.\n\nDARK OBSCURA\n21st NOVEMBER | SATURDAY 9PM onwards\nD-PEDRO MANDREM, GOA\n\nVISUALS: @vj.brahman\nSTAGE DECO: @psyde.eye",
+      "hasGst": true,
+      "bannerUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1793193399009-IMG_1104-banner-1793193398570.webp",
+      "posterUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1794902930662-IMG_1643-poster-1794902929792.webp",
+      "thumbnailUrl": null,
+      "locationId": "f067ae82-b140-48ec-8fbf-8ee3e2a747c8",
+      "startAt": "2026-11-21T15:30:00.000Z",
+      "endAt": "2026-11-22T02:00:00.000Z",
+      "status": "Published",
+      "mode": "Public",
+      "commissionRate": null,
+      "terms": {
+        "content": "1. No Refund Policy\nAll tickets are non-refundable and non-transferable, except in the event of cancellation or where otherwise required by applicable law. In case of event cancellation, refund terms will be communicated by the organiser.\n\n2. Age Restriction & Entry Policy\nEntry is restricted to guests aged 18 years and above. Valid government-issued photo ID may be required at the entrance. The organiser reserves the right to refuse entry to anyone violating event rules or displaying inappropriate behaviour.\n\n3. Right of Admission & Event Changes\nThe organiser reserves the right to refuse admission in cases of misconduct, safety concerns, or violation of event rules. Artist lineups, set times, and other event details may change due to unforeseen circumstances."
+      },
+      "lineup": null,
+      "source": null,
+      "legacyEventId": null,
+      "rejectionReason": null,
+      "createdBy": "452bb69c-8b41-42ec-b9fd-116bb51e686a",
+      "createdAt": "2026-10-28T13:27:23.061Z",
+      "updatedAt": "2026-11-17T08:28:32.965Z",
+      "deletedAt": null,
+      "location": {
+        "id": "f067ae82-b140-48ec-8fbf-8ee3e2a747c8",
+        "name": "D Pedro",
+        "city": "Goa"
+      },
+      "categories": [
+        {
+          "eventId": "3e75245c-f022-4e9a-aeb7-1f44abbae07e",
+          "categoryId": "39a448a0-9ead-4068-8542-70aa5faeb3f0",
+          "category": {
+            "id": "39a448a0-9ead-4068-8542-70aa5faeb3f0",
+            "name": "Nightlife"
+          }
+        },
+        {
+          "eventId": "3e75245c-f022-4e9a-aeb7-1f44abbae07e",
+          "categoryId": "5870b21f-d93e-42b5-8d1e-d26a3612e047",
+          "category": {
+            "id": "5870b21f-d93e-42b5-8d1e-d26a3612e047",
+            "name": "Food & Drink"
+          }
+        },
+        {
+          "eventId": "3e75245c-f022-4e9a-aeb7-1f44abbae07e",
+          "categoryId": "ab08f0a2-d4e5-46b9-b778-bfd18353a82f",
+          "category": {
+            "id": "ab08f0a2-d4e5-46b9-b778-bfd18353a82f",
+            "name": "Music"
+          }
+        }
+      ],
+      "creator": {
+        "id": "452bb69c-8b41-42ec-b9fd-116bb51e686a",
+        "firstName": "sufi ",
+        "lastName": "shaikh"
+      },
+      "eventTickets": [
+        {
+          "id": "77b43c53-6a80-4ff0-8c3e-46e0664c87fc",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "3e75245c-f022-4e9a-aeb7-1f44abbae07e",
+          "ticketTypeId": "13cc0006-3a0e-48f3-b0e0-be7894f0e52c",
+          "total": 4,
+          "available": 0,
+          "createdAt": "2026-10-28T13:27:23.544Z",
+          "updatedAt": "2026-11-17T08:28:33.116Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "2-tier",
+            "amount": "1999",
+            "currency": "INR",
+            "startSaleDate": "2026-10-28T14:30:00.000Z",
+            "endSaleDate": "2026-11-17T07:30:00.000Z"
+          },
+          "saleStatus": "ended"
+        },
+        {
+          "id": "2f4bdce2-ca05-43a6-bc09-6c26866b3aa3",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "3e75245c-f022-4e9a-aeb7-1f44abbae07e",
+          "ticketTypeId": "dbad1b03-cc0a-4f79-ad89-83108f788e90",
+          "total": 50,
+          "available": 50,
+          "createdAt": "2026-11-13T05:49:46.648Z",
+          "updatedAt": "2026-11-17T08:28:33.121Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Tier-3",
+            "amount": "2499",
+            "currency": "INR",
+            "startSaleDate": "2026-11-17T07:30:00.000Z",
+            "endSaleDate": "2026-11-22T02:00:00.000Z"
+          },
+          "saleStatus": "on_sale"
+        }
+      ],
+      "_count": {
+        "orders": 2,
+        "eventTickets": 2
+      },
+      "isComingSoon": false,
+      "lifecycle": "upcoming"
+    },
+    {
+      "id": "34ef5b4f-98c4-471e-b248-ef9e6ffb239c",
+      "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+      "name": "Hentai Cameraman",
+      "slug": "hentai-cameraman-rvuecr",
+      "description": "🌀 **SOMEWHERE BETWEEN THE ABSURD, THE SURREAL AND THE PSYCHEDELIC, A DIFFERENT FREQUENCY BEGINS TO EMERGE.**\n\nThis November, PULSE SOCIETY opens another portal into the unconventional.\n\nTaking the helm is **HENTAI CAMERAMAN** — bringing their distinctive, eccentric sonic universe to the dancefloor. An exploration into the stranger territories of psychedelic electronic music, where familiar structures dissolve into unexpected patterns, peculiar grooves and surreal sonic narratives. Unorthodox in spirit and unapologetic in expression, their musical language invites you to abandon expectations and surrender to the unpredictable. This is not about following a formula; it's about venturing beyond it.\n\nAccompanying this descent is a carefully assembled constellation of artists, each bringing their own interpretation of psychedelic expression.\n\n**GOBLIN CHAOS** — unleashing twisted frequencies and untamed psychedelic energy.\n\n**SVAAHA** — navigating the deeper, darker corridors of psychedelic sound, weaving intricate textures and hypnotic rhythmic journeys.\n\n**JUNGLE QUEEN** — bringing an untamed sonic character to the gathering.\n\n**IGNIA** — adding another dimension to the psychedelic spectrum.\n\n**TRIPPIN MONK** — joining the expedition with a journey into the unconventional.\n\nPresented by **PULSE SOCIETY** in association with **PRALAYAH RECORDS**.\n\nAn assembly of sound, imagination and underground culture. No boundaries to conform to, no expectations to fulfil — just a dancefloor where individuality, experimentation and sonic exploration take precedence.\n\n🐉 **PULSE SOCIETY presents: HENTAI CAMERAMAN**\n\n📅 27 NOVEMBER 2026  \n📍 OCEAN PIRATES, ANJUNA, GOA\n\n🎟️ Tickets available on all major platforms.\n\n**COME FOR THE FREQUENCIES. STAY FOR THE DESCENT.**\n\n#pulsesociety #psychedelicmusic #goaunderground #psytrance #anjunagoa",
+      "hasGst": false,
+      "bannerUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1794571967371-AXESS_HENTAI-banner-1794571967115.webp",
+      "posterUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1794571963558-AXESS-poster-1794571963006.webp",
+      "thumbnailUrl": null,
+      "locationId": "a1e330d9-186f-40c4-993d-ee61eb31f61a",
+      "startAt": "2026-11-27T15:30:00.000Z",
+      "endAt": "2026-11-28T03:30:00.000Z",
+      "status": "Published",
+      "mode": "Public",
+      "commissionRate": null,
+      "terms": null,
+      "lineup": null,
+      "source": null,
+      "legacyEventId": null,
+      "rejectionReason": null,
+      "createdBy": "e00d7724-137c-4568-b2e8-08274ba1f250",
+      "createdAt": "2026-11-13T12:14:38.702Z",
+      "updatedAt": "2026-11-13T13:30:40.207Z",
+      "deletedAt": null,
+      "location": {
+        "id": "a1e330d9-186f-40c4-993d-ee61eb31f61a",
+        "name": "Oceans Pirates Cafe",
+        "city": "Goa"
+      },
+      "categories": [
+        {
+          "eventId": "34ef5b4f-98c4-471e-b248-ef9e6ffb239c",
+          "categoryId": "6811a5cf-2b22-4e0f-bdc7-bb8478b39df9",
+          "category": {
+            "id": "6811a5cf-2b22-4e0f-bdc7-bb8478b39df9",
+            "name": "Community"
+          }
+        },
+        {
+          "eventId": "34ef5b4f-98c4-471e-b248-ef9e6ffb239c",
+          "categoryId": "3a31eb50-23a4-4a5f-b3b7-6a4018825748",
+          "category": {
+            "id": "3a31eb50-23a4-4a5f-b3b7-6a4018825748",
+            "name": "Festival"
+          }
+        },
+        {
+          "eventId": "34ef5b4f-98c4-471e-b248-ef9e6ffb239c",
+          "categoryId": "5870b21f-d93e-42b5-8d1e-d26a3612e047",
+          "category": {
+            "id": "5870b21f-d93e-42b5-8d1e-d26a3612e047",
+            "name": "Food & Drink"
+          }
+        },
+        {
+          "eventId": "34ef5b4f-98c4-471e-b248-ef9e6ffb239c",
+          "categoryId": "ab08f0a2-d4e5-46b9-b778-bfd18353a82f",
+          "category": {
+            "id": "ab08f0a2-d4e5-46b9-b778-bfd18353a82f",
+            "name": "Music"
+          }
+        },
+        {
+          "eventId": "34ef5b4f-98c4-471e-b248-ef9e6ffb239c",
+          "categoryId": "39a448a0-9ead-4068-8542-70aa5faeb3f0",
+          "category": {
+            "id": "39a448a0-9ead-4068-8542-70aa5faeb3f0",
+            "name": "Nightlife"
+          }
+        }
+      ],
+      "creator": {
+        "id": "e00d7724-137c-4568-b2e8-08274ba1f250",
+        "firstName": "Pulse",
+        "lastName": "Connect"
+      },
+      "eventTickets": [
+        {
+          "id": "ab3d262b-ac15-42d4-88cc-6037c8a1e62e",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "34ef5b4f-98c4-471e-b248-ef9e6ffb239c",
+          "ticketTypeId": "5763b5c2-8ea0-424e-baca-1f09dcb43556",
+          "total": 100,
+          "available": 100,
+          "createdAt": "2026-11-13T12:14:38.765Z",
+          "updatedAt": "2026-11-13T12:14:38.765Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Tier - 1",
+            "amount": "2000",
+            "currency": "INR",
+            "startSaleDate": "2026-11-13T12:14:00.000Z",
+            "endSaleDate": "2026-11-26T12:14:00.000Z"
+          },
+          "saleStatus": "on_sale"
+        }
+      ],
+      "_count": {
+        "orders": 0,
+        "eventTickets": 1
+      },
+      "isComingSoon": false,
+      "lifecycle": "upcoming"
+    },
+    {
+      "id": "0322f90b-198f-4637-818c-2f648caedf63",
+      "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+      "name": "Hentaicameraman - Bengaluru",
+      "slug": "hentaicameraman-bengaluru-bmmeet",
+      "description": "Hentaicameraman bring their blend of psychedelic sounds, playful elements, groovy rhythms and bumpy basslines to Gylt on 28 November. Their music is an absolute joy on the dancefloor, and we can't wait to have them in Bengaluru.\n\nJoining them on the night are 360°, Mohit Naik, Flip Fuse and Doppler Effect.\n\nLine-up\nHentaicameraman • 360° • Mohit Naik • Flip Fuse • Doppler Effect\n\nWhen\nSaturday, 28 November 2026\n6 PM onwards\n\nWhere\nGylt, Byg Brewski, Hennur, Bengaluru\n\nPresented by Tuned Culture × Devoid",
+      "hasGst": false,
+      "bannerUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1794836750639-1000913049-banner-1794836750362.webp",
+      "posterUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1794836741508-1000913048-poster-1794836740960.webp",
+      "thumbnailUrl": null,
+      "locationId": "c9e83553-c3c7-4fc2-8e77-67adb15a7b31",
+      "startAt": "2026-11-28T12:30:00.000Z",
+      "endAt": "2026-11-28T19:30:00.000Z",
+      "status": "Published",
+      "mode": "Public",
+      "commissionRate": null,
+      "terms": {
+        "content": "\n• Tickets are non-transferable.\n• Please carry a valid government ID for entry.\n• No re-entry.\n• A cover charge is mandatory at the venue and is payable in addition to the ticket price.\n• Strict no-drug policy.\n• No open-toe footwear for men.\n• Entry for 21+ only "
+      },
+      "lineup": null,
+      "source": null,
+      "legacyEventId": null,
+      "rejectionReason": null,
+      "createdBy": "05d2b310-7f12-498e-8681-cac77585922a",
+      "createdAt": "2026-11-16T13:48:55.743Z",
+      "updatedAt": "2026-11-16T14:06:28.173Z",
+      "deletedAt": null,
+      "location": {
+        "id": "c9e83553-c3c7-4fc2-8e77-67adb15a7b31",
+        "name": "GYLT",
+        "city": "Bangalore"
+      },
+      "categories": [
+        {
+          "eventId": "0322f90b-198f-4637-818c-2f648caedf63",
+          "categoryId": "39a448a0-9ead-4068-8542-70aa5faeb3f0",
+          "category": {
+            "id": "39a448a0-9ead-4068-8542-70aa5faeb3f0",
+            "name": "Nightlife"
+          }
+        },
+        {
+          "eventId": "0322f90b-198f-4637-818c-2f648caedf63",
+          "categoryId": "ab08f0a2-d4e5-46b9-b778-bfd18353a82f",
+          "category": {
+            "id": "ab08f0a2-d4e5-46b9-b778-bfd18353a82f",
+            "name": "Music"
+          }
+        }
+      ],
+      "creator": {
+        "id": "05d2b310-7f12-498e-8681-cac77585922a",
+        "firstName": "Tuned ",
+        "lastName": "Culture "
+      },
+      "eventTickets": [
+        {
+          "id": "9af9d5c6-dba2-44bb-b080-190edb864823",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "0322f90b-198f-4637-818c-2f648caedf63",
+          "ticketTypeId": "4725ca51-7de0-4fae-8460-93c4ed5e5546",
+          "total": 25,
+          "available": 25,
+          "createdAt": "2026-11-16T13:48:55.887Z",
+          "updatedAt": "2026-11-16T14:06:28.268Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "EARLY BIRD",
+            "amount": "1499",
+            "currency": "INR",
+            "startSaleDate": "2026-11-16T13:47:00.000Z",
+            "endSaleDate": "2026-11-28T19:30:00.000Z"
+          },
+          "saleStatus": "on_sale"
+        }
+      ],
+      "_count": {
+        "orders": 0,
+        "eventTickets": 1
+      },
+      "isComingSoon": false,
+      "lifecycle": "upcoming"
+    },
+    {
+      "id": "b416e04f-993b-4b2d-94bc-252517ef0333",
+      "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+      "name": "⟡ I N V E N T I O N ⟡ I N T E N T I O N ⟡",
+      "slug": "-i-n-v-e-n-t-i-o-n-i-n-t-e-n-t-i-o-n--zidvut",
+      "description": "⟡ I N V E N T I O N ⟡ I N T E N T I O N ⟡\n5th and 6th DECEMBER\nat DPEDRO MANDREMM",
+      "hasGst": false,
+      "bannerUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1794917933069-INVENTION_INTENTION_FLYER_DESIGN_MAIN__1600_x_600_px_-banner-1794917932622.webp",
+      "posterUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1794493593650-axess_INVENTION_INTENTION_FLYER_DESIGN_MAIN__1_-poster-1794493592997.webp",
+      "thumbnailUrl": null,
+      "locationId": "f067ae82-b140-48ec-8fbf-8ee3e2a747c8",
+      "startAt": "2026-12-05T12:05:00.000Z",
+      "endAt": "2026-12-07T05:05:00.000Z",
+      "status": "Published",
+      "mode": "Public",
+      "commissionRate": null,
+      "terms": null,
+      "lineup": null,
+      "source": null,
+      "legacyEventId": null,
+      "rejectionReason": null,
+      "createdBy": "b3527162-2506-475d-89ac-bdfa67a55a50",
+      "createdAt": "2026-11-12T12:12:04.612Z",
+      "updatedAt": "2026-11-17T13:55:09.445Z",
+      "deletedAt": null,
+      "location": {
+        "id": "f067ae82-b140-48ec-8fbf-8ee3e2a747c8",
+        "name": "D Pedro",
+        "city": "Goa"
+      },
+      "categories": [
+        {
+          "eventId": "b416e04f-993b-4b2d-94bc-252517ef0333",
+          "categoryId": "39a448a0-9ead-4068-8542-70aa5faeb3f0",
+          "category": {
+            "id": "39a448a0-9ead-4068-8542-70aa5faeb3f0",
+            "name": "Nightlife"
+          }
+        },
+        {
+          "eventId": "b416e04f-993b-4b2d-94bc-252517ef0333",
+          "categoryId": "3a31eb50-23a4-4a5f-b3b7-6a4018825748",
+          "category": {
+            "id": "3a31eb50-23a4-4a5f-b3b7-6a4018825748",
+            "name": "Festival"
+          }
+        },
+        {
+          "eventId": "b416e04f-993b-4b2d-94bc-252517ef0333",
+          "categoryId": "ab08f0a2-d4e5-46b9-b778-bfd18353a82f",
+          "category": {
+            "id": "ab08f0a2-d4e5-46b9-b778-bfd18353a82f",
+            "name": "Music"
+          }
+        },
+        {
+          "eventId": "b416e04f-993b-4b2d-94bc-252517ef0333",
+          "categoryId": "d49d953f-81b1-4220-9307-b00c2090bad5",
+          "category": {
+            "id": "d49d953f-81b1-4220-9307-b00c2090bad5",
+            "name": "Arts & Theatre"
+          }
+        },
+        {
+          "eventId": "b416e04f-993b-4b2d-94bc-252517ef0333",
+          "categoryId": "d52aec7e-5274-4cc0-ae21-5534e3e507f7",
+          "category": {
+            "id": "d52aec7e-5274-4cc0-ae21-5534e3e507f7",
+            "name": "Technology"
+          }
+        }
+      ],
+      "creator": {
+        "id": "b3527162-2506-475d-89ac-bdfa67a55a50",
+        "firstName": "Binx",
+        "lastName": "Rao"
+      },
+      "eventTickets": [
+        {
+          "id": "ff8d2600-952c-477c-82d5-839f4cb39c8b",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "b416e04f-993b-4b2d-94bc-252517ef0333",
+          "ticketTypeId": "357806d9-0d6a-4e66-a5a0-bebeb2cc8414",
+          "total": 10,
+          "available": 2,
+          "createdAt": "2026-11-12T12:12:04.683Z",
+          "updatedAt": "2026-11-17T13:55:09.458Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "THE LUCKY FIRST 10 TICKETS",
+            "amount": "699",
+            "currency": "INR",
+            "startSaleDate": "2026-11-12T12:11:00.000Z",
+            "endSaleDate": "2026-11-16T12:11:00.000Z"
+          },
+          "saleStatus": "ended"
+        },
+        {
+          "id": "75b1165a-2900-4ee1-b7da-ab7d57500315",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "b416e04f-993b-4b2d-94bc-252517ef0333",
+          "ticketTypeId": "a7075224-356f-4461-ba6e-efc1484443c8",
+          "total": 300,
+          "available": 300,
+          "createdAt": "2026-11-17T05:15:03.297Z",
+          "updatedAt": "2026-11-17T13:55:09.467Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "One day pass ",
+            "amount": "1499",
+            "currency": "INR",
+            "startSaleDate": "2026-11-17T12:05:00.000Z",
+            "endSaleDate": "2026-12-07T05:05:00.000Z"
+          },
+          "saleStatus": "on_sale"
+        },
+        {
+          "id": "f67122f0-5211-40e6-bfd3-a2fb694784dd",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "b416e04f-993b-4b2d-94bc-252517ef0333",
+          "ticketTypeId": "2ce68880-7e26-4395-b6b2-ef5480fabacd",
+          "total": 300,
+          "available": 300,
+          "createdAt": "2026-11-17T05:15:03.291Z",
+          "updatedAt": "2026-11-17T13:55:09.463Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Full festival Phase 1 ",
+            "amount": "2599",
+            "currency": "INR",
+            "startSaleDate": "2026-11-17T05:10:00.000Z",
+            "endSaleDate": "2026-12-07T05:05:00.000Z"
+          },
+          "saleStatus": "on_sale"
+        }
+      ],
+      "_count": {
+        "orders": 2,
+        "eventTickets": 3
+      },
+      "isComingSoon": false,
+      "lifecycle": "upcoming"
+    },
+    {
+      "id": "40649630-f2b3-467f-ae6c-318a347bd3c6",
+      "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+      "name": "Maleficus Noctis",
+      "slug": "maleficus-noctis-v11ouu",
+      "description": "translated from Latin, Maleficus Noctis brings together two ideas: the malevolent or mischievous, and the night. A rather fitting name for two days that aren't quite going to follow the usual script.\n\nWe're bringing two different worlds to D'Pedro Quarry this December, each with its own character, atmosphere and musical direction.\n\n19 DECEMBER | DAY 01\nMEADOWS OF THE DARK\n\nThe first night is dedicated to the darker end of the psychedelic spectrum, with artists exploring darkpsy, forest and much more. Expect a journey through shadowy territories, dense atmospheres and psychedelic explorations that will fire up every neuron you've got.\n\nA night dedicated to the stranger, darker side of psychedelia.\n\n20 DECEMBER | DAY 02\nPOST MODERN MUSIC LABEL SHOWCASE\n\nThe following night takes a different turn. Post Modern brings its musical universe to the quarry, with a showcase dedicated to unconventional electronic sounds, experimentation and artists who enjoy taking the less travelled route.\n\nWe'd like you to be part of this little detour from the ordinary.\n\n19 & 20 DECEMBER\nD'PEDRO QUARRY",
+      "hasGst": false,
+      "bannerUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1794415262541-1000168055-banner-1794415262171.webp",
+      "posterUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1794415080656-1000168036-poster-1794415080124.webp",
+      "thumbnailUrl": null,
+      "locationId": "ee8ef744-b943-4703-835c-320f0f3ea009",
+      "startAt": "2026-12-19T14:30:00.000Z",
+      "endAt": "2026-12-21T04:30:00.000Z",
+      "status": "Published",
+      "mode": "Public",
+      "commissionRate": null,
+      "terms": null,
+      "lineup": null,
+      "source": null,
+      "legacyEventId": null,
+      "rejectionReason": null,
+      "createdBy": "773130bc-637a-4a2d-b7ce-87c9abb7f7ec",
+      "createdAt": "2026-11-11T16:51:15.296Z",
+      "updatedAt": "2026-11-12T10:31:27.147Z",
+      "deletedAt": null,
+      "location": {
+        "id": "ee8ef744-b943-4703-835c-320f0f3ea009",
+        "name": "Dpedro",
+        "city": "Goa"
+      },
+      "categories": [
+        {
+          "eventId": "40649630-f2b3-467f-ae6c-318a347bd3c6",
+          "categoryId": "39a448a0-9ead-4068-8542-70aa5faeb3f0",
+          "category": {
+            "id": "39a448a0-9ead-4068-8542-70aa5faeb3f0",
+            "name": "Nightlife"
+          }
+        },
+        {
+          "eventId": "40649630-f2b3-467f-ae6c-318a347bd3c6",
+          "categoryId": "3a31eb50-23a4-4a5f-b3b7-6a4018825748",
+          "category": {
+            "id": "3a31eb50-23a4-4a5f-b3b7-6a4018825748",
+            "name": "Festival"
+          }
+        },
+        {
+          "eventId": "40649630-f2b3-467f-ae6c-318a347bd3c6",
+          "categoryId": "5870b21f-d93e-42b5-8d1e-d26a3612e047",
+          "category": {
+            "id": "5870b21f-d93e-42b5-8d1e-d26a3612e047",
+            "name": "Food & Drink"
+          }
+        },
+        {
+          "eventId": "40649630-f2b3-467f-ae6c-318a347bd3c6",
+          "categoryId": "6811a5cf-2b22-4e0f-bdc7-bb8478b39df9",
+          "category": {
+            "id": "6811a5cf-2b22-4e0f-bdc7-bb8478b39df9",
+            "name": "Community"
+          }
+        },
+        {
+          "eventId": "40649630-f2b3-467f-ae6c-318a347bd3c6",
+          "categoryId": "7808fdd4-c577-4d0d-8fc1-a0ed32f681e7",
+          "category": {
+            "id": "7808fdd4-c577-4d0d-8fc1-a0ed32f681e7",
+            "name": "Other"
+          }
+        },
+        {
+          "eventId": "40649630-f2b3-467f-ae6c-318a347bd3c6",
+          "categoryId": "ab08f0a2-d4e5-46b9-b778-bfd18353a82f",
+          "category": {
+            "id": "ab08f0a2-d4e5-46b9-b778-bfd18353a82f",
+            "name": "Music"
+          }
+        },
+        {
+          "eventId": "40649630-f2b3-467f-ae6c-318a347bd3c6",
+          "categoryId": "d49d953f-81b1-4220-9307-b00c2090bad5",
+          "category": {
+            "id": "d49d953f-81b1-4220-9307-b00c2090bad5",
+            "name": "Arts & Theatre"
+          }
+        }
+      ],
+      "creator": {
+        "id": "773130bc-637a-4a2d-b7ce-87c9abb7f7ec",
+        "firstName": "Ron ",
+        "lastName": "Bose"
+      },
+      "eventTickets": [
+        {
+          "id": "4a598694-d991-4c16-9073-a9dbf01e4e20",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "40649630-f2b3-467f-ae6c-318a347bd3c6",
+          "ticketTypeId": "1d4269df-947d-49cc-a458-f5fd42fbbc44",
+          "total": 50,
+          "available": 36,
+          "createdAt": "2026-11-11T16:51:15.648Z",
+          "updatedAt": "2026-11-18T01:19:26.245Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Early bird ",
+            "amount": "1999",
+            "currency": "INR",
+            "startSaleDate": "2026-11-12T10:00:00.000Z",
+            "endSaleDate": "2026-12-21T04:30:00.000Z"
+          },
+          "saleStatus": "on_sale"
+        }
+      ],
+      "_count": {
+        "orders": 4,
+        "eventTickets": 1
+      },
+      "isComingSoon": false,
+      "lifecycle": "upcoming"
+    },
+    {
+      "id": "0a33febf-6106-4ee7-be21-ff33faff4c75",
+      "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+      "name": "Primal Void",
+      "slug": "primal-void-24-december-2026-goa-bfkd7n",
+      "description": "Dimensional Magic Tribe Presents – Primal Void\n\nWhen? 📆 24 – 25 December 2026\n\nWhere? 📍D Pedro , Goa\n\nLineup :\n\n★彡[TBA]彡\n\nTicket Prices Out Now !",
+      "hasGst": true,
+      "bannerUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1786374548635-Primal_void2-banner-1786374548126.webp",
+      "posterUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1786374542167-Primal_void_1-poster-1786374541397.webp",
+      "thumbnailUrl": null,
+      "locationId": "f067ae82-b140-48ec-8fbf-8ee3e2a747c8",
+      "startAt": "2026-12-24T14:30:00.000Z",
+      "endAt": "2026-12-26T04:30:00.000Z",
+      "status": "Published",
+      "mode": "Public",
+      "commissionRate": null,
+      "terms": null,
+      "lineup": null,
+      "source": null,
+      "legacyEventId": null,
+      "rejectionReason": null,
+      "createdBy": "dc617ca5-8ed1-4d7e-ac88-feb9532a471f",
+      "createdAt": "2026-08-10T15:12:32.937Z",
+      "updatedAt": "2026-09-14T16:19:02.554Z",
+      "deletedAt": null,
+      "location": {
+        "id": "f067ae82-b140-48ec-8fbf-8ee3e2a747c8",
+        "name": "D Pedro",
+        "city": "Goa"
+      },
+      "categories": [
+        {
+          "eventId": "0a33febf-6106-4ee7-be21-ff33faff4c75",
+          "categoryId": "3a31eb50-23a4-4a5f-b3b7-6a4018825748",
+          "category": {
+            "id": "3a31eb50-23a4-4a5f-b3b7-6a4018825748",
+            "name": "Festival"
+          }
+        },
+        {
+          "eventId": "0a33febf-6106-4ee7-be21-ff33faff4c75",
+          "categoryId": "ab08f0a2-d4e5-46b9-b778-bfd18353a82f",
+          "category": {
+            "id": "ab08f0a2-d4e5-46b9-b778-bfd18353a82f",
+            "name": "Music"
+          }
+        },
+        {
+          "eventId": "0a33febf-6106-4ee7-be21-ff33faff4c75",
+          "categoryId": "39a448a0-9ead-4068-8542-70aa5faeb3f0",
+          "category": {
+            "id": "39a448a0-9ead-4068-8542-70aa5faeb3f0",
+            "name": "Nightlife"
+          }
+        },
+        {
+          "eventId": "0a33febf-6106-4ee7-be21-ff33faff4c75",
+          "categoryId": "6811a5cf-2b22-4e0f-bdc7-bb8478b39df9",
+          "category": {
+            "id": "6811a5cf-2b22-4e0f-bdc7-bb8478b39df9",
+            "name": "Community"
+          }
+        },
+        {
+          "eventId": "0a33febf-6106-4ee7-be21-ff33faff4c75",
+          "categoryId": "d49d953f-81b1-4220-9307-b00c2090bad5",
+          "category": {
+            "id": "d49d953f-81b1-4220-9307-b00c2090bad5",
+            "name": "Arts & Theatre"
+          }
+        },
+        {
+          "eventId": "0a33febf-6106-4ee7-be21-ff33faff4c75",
+          "categoryId": "7808fdd4-c577-4d0d-8fc1-a0ed32f681e7",
+          "category": {
+            "id": "7808fdd4-c577-4d0d-8fc1-a0ed32f681e7",
+            "name": "Other"
+          }
+        }
+      ],
+      "creator": {
+        "id": "dc617ca5-8ed1-4d7e-ac88-feb9532a471f",
+        "firstName": "Ron",
+        "lastName": "Bose "
+      },
+      "eventTickets": [
+        {
+          "id": "95f6bb11-57c3-4bd3-9c2e-9527c7b884d3",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "0a33febf-6106-4ee7-be21-ff33faff4c75",
+          "ticketTypeId": "f9712eed-df7d-48c0-ba9c-8676558467db",
+          "total": 100,
+          "available": 95,
+          "createdAt": "2026-08-10T15:12:33.006Z",
+          "updatedAt": "2026-11-11T19:14:06.178Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Early Bird",
+            "amount": "1499",
+            "currency": "INR",
+            "startSaleDate": "2026-08-10T15:11:00.000Z",
+            "endSaleDate": "2026-09-15T18:30:00.000Z"
+          },
+          "saleStatus": "ended"
+        },
+        {
+          "id": "daa8127d-c8d4-4356-bd51-af051d95ce5d",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "0a33febf-6106-4ee7-be21-ff33faff4c75",
+          "ticketTypeId": "feb051b1-11e8-4197-9ceb-6e96a861c3a9",
+          "total": 200,
+          "available": 194,
+          "createdAt": "2026-09-14T16:19:02.710Z",
+          "updatedAt": "2026-11-11T19:14:06.183Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Phase 1",
+            "amount": "3499",
+            "currency": "INR",
+            "startSaleDate": "2026-09-14T16:17:00.000Z",
+            "endSaleDate": "2026-11-10T04:30:00.000Z"
+          },
+          "saleStatus": "ended"
+        },
+        {
+          "id": "f4d9c2fc-2215-4fe9-89ae-aae1672935d9",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "0a33febf-6106-4ee7-be21-ff33faff4c75",
+          "ticketTypeId": "bfefb7ba-b8ab-4137-a70c-527dd2c28127",
+          "total": 200,
+          "available": 200,
+          "createdAt": "2026-11-11T19:14:06.186Z",
+          "updatedAt": "2026-11-11T19:14:06.186Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Tier 2",
+            "amount": "4999",
+            "currency": "INR",
+            "startSaleDate": "2026-11-09T19:14:00.000Z",
+            "endSaleDate": "2026-12-26T04:30:00.000Z"
+          },
+          "saleStatus": "on_sale"
+        }
+      ],
+      "_count": {
+        "orders": 5,
+        "eventTickets": 3
+      },
+      "isComingSoon": false,
+      "lifecycle": "upcoming"
+    },
+    {
+      "id": "334515f5-cd68-4ab8-a6d7-de3d234731f5",
+      "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+      "name": "Shunyata Ritual - Sanathana 12 Hrs Live",
+      "slug": "shunyata-ritual-sanathana-12-hrs-live-scejta",
+      "description": "Shunyata Ritual - Sanathana 12 Hrs Live \nIn the heart of Parvati Valley!",
+      "hasGst": false,
+      "bannerUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1789375103407-axes_horizontal_banner.jpg-banner-1789375103087.webp",
+      "posterUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1789375098442-AXES_VERTICAL-_SHUNYATA_KASOL_SANATHANA_12_HOURS.jpg-poster-1789375097557.webp",
+      "thumbnailUrl": null,
+      "locationId": "483176f7-e5bf-4eb7-b0c5-4f48f3860143",
+      "startAt": "2026-12-25T12:30:00.000Z",
+      "endAt": "2026-12-26T00:30:00.000Z",
+      "status": "Published",
+      "mode": "Public",
+      "commissionRate": null,
+      "terms": null,
+      "lineup": null,
+      "source": null,
+      "legacyEventId": null,
+      "rejectionReason": null,
+      "createdBy": "5a39ca9e-f3a2-4ddf-94f7-3e88570d5e12",
+      "createdAt": "2026-09-14T08:42:16.489Z",
+      "updatedAt": "2026-10-17T07:42:19.462Z",
+      "deletedAt": null,
+      "location": {
+        "id": "483176f7-e5bf-4eb7-b0c5-4f48f3860143",
+        "name": "Parvati Valley",
+        "city": "Kasol"
+      },
+      "categories": [
+        {
+          "eventId": "334515f5-cd68-4ab8-a6d7-de3d234731f5",
+          "categoryId": "6811a5cf-2b22-4e0f-bdc7-bb8478b39df9",
+          "category": {
+            "id": "6811a5cf-2b22-4e0f-bdc7-bb8478b39df9",
+            "name": "Community"
+          }
+        },
+        {
+          "eventId": "334515f5-cd68-4ab8-a6d7-de3d234731f5",
+          "categoryId": "5870b21f-d93e-42b5-8d1e-d26a3612e047",
+          "category": {
+            "id": "5870b21f-d93e-42b5-8d1e-d26a3612e047",
+            "name": "Food & Drink"
+          }
+        },
+        {
+          "eventId": "334515f5-cd68-4ab8-a6d7-de3d234731f5",
+          "categoryId": "ab08f0a2-d4e5-46b9-b778-bfd18353a82f",
+          "category": {
+            "id": "ab08f0a2-d4e5-46b9-b778-bfd18353a82f",
+            "name": "Music"
+          }
+        },
+        {
+          "eventId": "334515f5-cd68-4ab8-a6d7-de3d234731f5",
+          "categoryId": "39a448a0-9ead-4068-8542-70aa5faeb3f0",
+          "category": {
+            "id": "39a448a0-9ead-4068-8542-70aa5faeb3f0",
+            "name": "Nightlife"
+          }
+        }
+      ],
+      "creator": {
+        "id": "5a39ca9e-f3a2-4ddf-94f7-3e88570d5e12",
+        "firstName": "Super",
+        "lastName": "Admin"
+      },
+      "eventTickets": [
+        {
+          "id": "f312a5a0-ba2e-4fa5-8cc0-349287ea7039",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "334515f5-cd68-4ab8-a6d7-de3d234731f5",
+          "ticketTypeId": "b3f42ff8-7f1c-44ef-93a5-e61a987002c3",
+          "total": 100,
+          "available": 94,
+          "createdAt": "2026-09-14T08:42:16.685Z",
+          "updatedAt": "2026-10-17T07:42:19.589Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Early Bird ",
+            "amount": "2000",
+            "currency": "INR",
+            "startSaleDate": "2026-09-14T08:40:00.000Z",
+            "endSaleDate": "2026-10-17T07:41:00.000Z"
+          },
+          "saleStatus": "ended"
+        },
+        {
+          "id": "5c9e3a1a-ca8c-4216-b92b-97f7ccc05fe4",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "334515f5-cd68-4ab8-a6d7-de3d234731f5",
+          "ticketTypeId": "a02365cd-82ac-46fd-b78a-0b2306e15317",
+          "total": 100,
+          "available": 97,
+          "createdAt": "2026-10-17T07:42:19.595Z",
+          "updatedAt": "2026-11-12T04:59:42.502Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Tier 1 ",
+            "amount": "2500",
+            "currency": "INR",
+            "startSaleDate": "2026-10-17T07:41:00.000Z",
+            "endSaleDate": "2026-12-24T10:30:00.000Z"
+          },
+          "saleStatus": "on_sale"
+        }
+      ],
+      "_count": {
+        "orders": 6,
+        "eventTickets": 2
+      },
+      "isComingSoon": false,
+      "lifecycle": "upcoming"
+    },
+    {
+      "id": "affca181-4a78-4c4b-9199-38fb0fcda025",
+      "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+      "name": "ONCE IN A XMOON – XMAS EDITION",
+      "slug": "once-in-a-xmoon-xmas-edition-cgzlde",
+      "description": "🎄🌕 ONCE IN A XMOON – XMAS EDITION 🌕🎄 Dec 25th \n\nThis Christmas, we’re taking the festive spirit to another dimension! ❄️🔥\n\nGet ready for a night of powerful , electrifying sonic energy and unforgettable moments as XOMPAX LIVE takes over House of Chapora alongside an incredible international and homegrown lineup.\n\n🎧 LINEUP\nXompax Live • Nitin • Bastel • Zameer • Buzuku • Kryll • Kalayyy\n\n📅 25th December\n📍 House of Chapora, Chapora Jetty, Anjuna – Caisua, Goa\n\nMake this Christmas one to remember. Gather your crew and get ready to lose yourself in the music! 🎶🌲\n\n\nPowered  by Seemagic & Air Snare Music\n🎟️ Grab your passes now!\n\n\n#OnceInAXmoon #HouseOfChapora #XmasEdition #Goaparties #xompax",
+      "hasGst": false,
+      "bannerUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1793642820752-once_in_a_xmoon_axess_banner.jpg-banner-1793642820343.webp",
+      "posterUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1793642817194-once_in_a_xmoon_axess_post-poster-1793642816624.webp",
+      "thumbnailUrl": null,
+      "locationId": "07ea4c1e-d8f2-4edb-8c3d-d3bdc48270d6",
+      "startAt": "2026-12-25T14:30:00.000Z",
+      "endAt": "2026-12-26T00:30:00.000Z",
+      "status": "Published",
+      "mode": "Public",
+      "commissionRate": null,
+      "terms": null,
+      "lineup": null,
+      "source": null,
+      "legacyEventId": null,
+      "rejectionReason": null,
+      "createdBy": "5c22ed86-c9fa-4282-94b1-94491280a8b2",
+      "createdAt": "2026-11-02T18:09:00.354Z",
+      "updatedAt": "2026-11-02T18:09:10.918Z",
+      "deletedAt": null,
+      "location": {
+        "id": "07ea4c1e-d8f2-4edb-8c3d-d3bdc48270d6",
+        "name": "House Of Chapora",
+        "city": "Goa"
+      },
+      "categories": [
+        {
+          "eventId": "affca181-4a78-4c4b-9199-38fb0fcda025",
+          "categoryId": "6811a5cf-2b22-4e0f-bdc7-bb8478b39df9",
+          "category": {
+            "id": "6811a5cf-2b22-4e0f-bdc7-bb8478b39df9",
+            "name": "Community"
+          }
+        },
+        {
+          "eventId": "affca181-4a78-4c4b-9199-38fb0fcda025",
+          "categoryId": "3a31eb50-23a4-4a5f-b3b7-6a4018825748",
+          "category": {
+            "id": "3a31eb50-23a4-4a5f-b3b7-6a4018825748",
+            "name": "Festival"
+          }
+        },
+        {
+          "eventId": "affca181-4a78-4c4b-9199-38fb0fcda025",
+          "categoryId": "5870b21f-d93e-42b5-8d1e-d26a3612e047",
+          "category": {
+            "id": "5870b21f-d93e-42b5-8d1e-d26a3612e047",
+            "name": "Food & Drink"
+          }
+        },
+        {
+          "eventId": "affca181-4a78-4c4b-9199-38fb0fcda025",
+          "categoryId": "ab08f0a2-d4e5-46b9-b778-bfd18353a82f",
+          "category": {
+            "id": "ab08f0a2-d4e5-46b9-b778-bfd18353a82f",
+            "name": "Music"
+          }
+        },
+        {
+          "eventId": "affca181-4a78-4c4b-9199-38fb0fcda025",
+          "categoryId": "83db39c4-8dfb-4a33-8a93-f6389e1d56fc",
+          "category": {
+            "id": "83db39c4-8dfb-4a33-8a93-f6389e1d56fc",
+            "name": "Networking"
+          }
+        },
+        {
+          "eventId": "affca181-4a78-4c4b-9199-38fb0fcda025",
+          "categoryId": "39a448a0-9ead-4068-8542-70aa5faeb3f0",
+          "category": {
+            "id": "39a448a0-9ead-4068-8542-70aa5faeb3f0",
+            "name": "Nightlife"
+          }
+        }
+      ],
+      "creator": {
+        "id": "5c22ed86-c9fa-4282-94b1-94491280a8b2",
+        "firstName": "MELTING",
+        "lastName": "GALAXY"
+      },
+      "eventTickets": [
+        {
+          "id": "502d2513-ded5-4d55-9047-a924462eeb69",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "affca181-4a78-4c4b-9199-38fb0fcda025",
+          "ticketTypeId": "fa82609c-d488-4b6c-a04d-e08f9dc040ba",
+          "total": 100,
+          "available": 100,
+          "createdAt": "2026-11-02T18:09:00.507Z",
+          "updatedAt": "2026-11-02T18:09:00.507Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Early BIrd ",
+            "amount": "1000",
+            "currency": "INR",
+            "startSaleDate": "2026-11-02T18:08:00.000Z",
+            "endSaleDate": "2026-12-25T14:30:00.000Z"
+          },
+          "saleStatus": "on_sale"
+        }
+      ],
+      "_count": {
+        "orders": 0,
+        "eventTickets": 1
+      },
+      "isComingSoon": false,
+      "lifecycle": "upcoming"
+    },
+    {
+      "id": "bd8cf97a-8b0f-4b09-9855-6a827aa29727",
+      "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+      "name": "Perseverance Festival",
+      "slug": "perseverance-goa",
+      "description": "Psyrituals , Akkadian Project Presents - Perseverance Festival\n\n 📆 26 - 28 December 2026\n\nVENUE -📍 D Pedro , Goa\n\nPERSEVERANCE FESTIVAL\n26th - 27th December 2026 • Goa\n\nIn Collaboration with @_akkadianproject & @psyrituals.records\n\nThe time has come to start a new chapter.\n\nDedicated to the details that matter most — a precisely engineered sound system, where artists who have persevered with their craft for decades and more will weave conceptual music into a journey that transcends us to the core of our inner beings.\n\nWith visionary art that connects us to higher subtle dimensions, sacred fire performances to ignite our inner flame and reveal our path of self-discovery…\n\nPerseverance Festival is for the dreamers, the wanderers, the seekers, and the visionaries — for those who walk the edge between worlds, who hear the call of the wild jungle and the pulse of the cosmos, who refuse to dim their inner light.\n\nIt is a sanctuary for the souls brave enough to surrender, to dance through the shadows and the stars, to dissolve the boundaries between self and universe.\n\nLet the fire awaken ancient truths. Let the visions guide you home.\n\nUnder the same eternal sky, we endure. We transform. We rise.\n\nThis is Perseverance.\n\nVenue: @dpedroinn Mandrem, Goa\n\n⚡ SUPER EARLY BIRD IS LIVE — Only first 40 tickets at the lowest price.\nOnce they’re gone, the price rises.\n\nGrab yours now before they disappear:",
+      "hasGst": false,
+      "bannerUrl": "https://axess-dev.s3.ap-south-1.amazonaws.com/axess-images/migrated-events/perseverance-goa-banner.png",
+      "posterUrl": "https://axess-dev.s3.ap-south-1.amazonaws.com/axess-images/migrated-events/perseverance-goa-poster.png",
+      "thumbnailUrl": null,
+      "locationId": "f067ae82-b140-48ec-8fbf-8ee3e2a747c8",
+      "startAt": "2026-12-26T14:00:00.000Z",
+      "endAt": "2026-12-28T04:00:00.000Z",
+      "status": "Published",
+      "mode": "Public",
+      "commissionRate": null,
+      "terms": null,
+      "lineup": "TBA",
+      "source": "axess-v2",
+      "legacyEventId": "244535",
+      "rejectionReason": null,
+      "createdBy": "b3527162-2506-475d-89ac-bdfa67a55a50",
+      "createdAt": "2026-08-04T03:20:48.246Z",
+      "updatedAt": "2026-09-10T14:11:39.342Z",
+      "deletedAt": null,
+      "location": {
+        "id": "f067ae82-b140-48ec-8fbf-8ee3e2a747c8",
+        "name": "D Pedro",
+        "city": "Goa"
+      },
+      "categories": [
+        {
+          "eventId": "bd8cf97a-8b0f-4b09-9855-6a827aa29727",
+          "categoryId": "ab08f0a2-d4e5-46b9-b778-bfd18353a82f",
+          "category": {
+            "id": "ab08f0a2-d4e5-46b9-b778-bfd18353a82f",
+            "name": "Music"
+          }
+        },
+        {
+          "eventId": "bd8cf97a-8b0f-4b09-9855-6a827aa29727",
+          "categoryId": "d49d953f-81b1-4220-9307-b00c2090bad5",
+          "category": {
+            "id": "d49d953f-81b1-4220-9307-b00c2090bad5",
+            "name": "Arts & Theatre"
+          }
+        },
+        {
+          "eventId": "bd8cf97a-8b0f-4b09-9855-6a827aa29727",
+          "categoryId": "3a31eb50-23a4-4a5f-b3b7-6a4018825748",
+          "category": {
+            "id": "3a31eb50-23a4-4a5f-b3b7-6a4018825748",
+            "name": "Festival"
+          }
+        },
+        {
+          "eventId": "bd8cf97a-8b0f-4b09-9855-6a827aa29727",
+          "categoryId": "39a448a0-9ead-4068-8542-70aa5faeb3f0",
+          "category": {
+            "id": "39a448a0-9ead-4068-8542-70aa5faeb3f0",
+            "name": "Nightlife"
+          }
+        },
+        {
+          "eventId": "bd8cf97a-8b0f-4b09-9855-6a827aa29727",
+          "categoryId": "5870b21f-d93e-42b5-8d1e-d26a3612e047",
+          "category": {
+            "id": "5870b21f-d93e-42b5-8d1e-d26a3612e047",
+            "name": "Food & Drink"
+          }
+        },
+        {
+          "eventId": "bd8cf97a-8b0f-4b09-9855-6a827aa29727",
+          "categoryId": "7808fdd4-c577-4d0d-8fc1-a0ed32f681e7",
+          "category": {
+            "id": "7808fdd4-c577-4d0d-8fc1-a0ed32f681e7",
+            "name": "Other"
+          }
+        },
+        {
+          "eventId": "bd8cf97a-8b0f-4b09-9855-6a827aa29727",
+          "categoryId": "af69daf8-4579-40dd-939b-7ef480ffcb81",
+          "category": {
+            "id": "af69daf8-4579-40dd-939b-7ef480ffcb81",
+            "name": "Wellness"
+          }
+        },
+        {
+          "eventId": "bd8cf97a-8b0f-4b09-9855-6a827aa29727",
+          "categoryId": "467944ab-a5f9-48b1-95ea-05b80267ba97",
+          "category": {
+            "id": "467944ab-a5f9-48b1-95ea-05b80267ba97",
+            "name": "Workshop"
+          }
+        },
+        {
+          "eventId": "bd8cf97a-8b0f-4b09-9855-6a827aa29727",
+          "categoryId": "6811a5cf-2b22-4e0f-bdc7-bb8478b39df9",
+          "category": {
+            "id": "6811a5cf-2b22-4e0f-bdc7-bb8478b39df9",
+            "name": "Community"
+          }
+        }
+      ],
+      "creator": {
+        "id": "b3527162-2506-475d-89ac-bdfa67a55a50",
+        "firstName": "Binx",
+        "lastName": "Rao"
+      },
+      "eventTickets": [
+        {
+          "id": "b92dc353-d2b1-4f96-836b-fbd08650d64d",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "bd8cf97a-8b0f-4b09-9855-6a827aa29727",
+          "ticketTypeId": "561857dd-c43a-4b33-aff0-f2ac3dca057e",
+          "total": 10,
+          "available": 0,
+          "createdAt": "2026-08-04T03:20:48.254Z",
+          "updatedAt": "2026-11-17T13:55:32.083Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Early Bird - GA ",
+            "amount": "1999",
+            "currency": "INR",
+            "startSaleDate": "2026-07-10T00:00:00.000Z",
+            "endSaleDate": "2026-11-17T00:00:00.000Z"
+          },
+          "saleStatus": "ended"
+        },
+        {
+          "id": "33b67071-94c2-4348-8309-fbd2f8937409",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "bd8cf97a-8b0f-4b09-9855-6a827aa29727",
+          "ticketTypeId": "d55b22ed-27e6-4ef8-8268-22999bafae35",
+          "total": 50,
+          "available": 36,
+          "createdAt": "2026-08-04T03:20:48.250Z",
+          "updatedAt": "2026-11-17T13:55:32.088Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "PHASE 1 - Exclusive GA  ( Limited Time ) ",
+            "amount": "2499",
+            "currency": "INR",
+            "startSaleDate": "2026-07-10T00:00:00.000Z",
+            "endSaleDate": "2026-11-17T00:00:00.000Z"
+          },
+          "saleStatus": "ended"
+        },
+        {
+          "id": "6c60857c-1676-4c9a-ad6c-7d492f17dcf9",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "bd8cf97a-8b0f-4b09-9855-6a827aa29727",
+          "ticketTypeId": "a278e03b-b6f5-4556-9de5-30fe8b4a589f",
+          "total": 500,
+          "available": 500,
+          "createdAt": "2026-11-17T13:55:32.091Z",
+          "updatedAt": "2026-11-17T13:55:32.091Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "PHASE 2 SINGLE DAY ENTRY FOR FESTIVAL",
+            "amount": "3000",
+            "currency": "INR",
+            "startSaleDate": "2026-11-17T13:51:00.000Z",
+            "endSaleDate": "2026-12-26T13:51:00.000Z"
+          },
+          "saleStatus": "on_sale"
+        },
+        {
+          "id": "adbeaa45-a18f-47cd-b7a2-943ea6cef5b8",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "bd8cf97a-8b0f-4b09-9855-6a827aa29727",
+          "ticketTypeId": "80d818dc-88f4-4f88-8d50-613d21727f26",
+          "total": 500,
+          "available": 500,
+          "createdAt": "2026-11-17T13:55:32.095Z",
+          "updatedAt": "2026-11-17T13:55:32.095Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "FULL FESTIVAL PASS TWO NIGHTS 3 DAYS",
+            "amount": "5500",
+            "currency": "INR",
+            "startSaleDate": "2026-11-17T13:52:00.000Z",
+            "endSaleDate": "2026-12-26T13:52:00.000Z"
+          },
+          "saleStatus": "on_sale"
+        },
+        {
+          "id": "60170b54-7ffb-47dc-abfe-f31a6e4f0e7f",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "bd8cf97a-8b0f-4b09-9855-6a827aa29727",
+          "ticketTypeId": "53fb9f77-a034-415b-8950-77dbc0ecbb00",
+          "total": 20,
+          "available": 20,
+          "createdAt": "2026-11-17T13:55:32.098Z",
+          "updatedAt": "2026-11-17T13:55:32.098Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "GROUP OF 10 PEOPLE",
+            "amount": "50000",
+            "currency": "INR",
+            "startSaleDate": "2026-11-17T13:53:00.000Z",
+            "endSaleDate": "2026-12-26T13:54:00.000Z"
+          },
+          "saleStatus": "on_sale"
+        }
+      ],
+      "_count": {
+        "orders": 7,
+        "eventTickets": 5
+      },
+      "isComingSoon": false,
+      "lifecycle": "upcoming"
+    },
+    {
+      "id": "b6a22a7e-553c-4fbb-a057-adc1313e48cf",
+      "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+      "name": "Ritual Of The Void Goa",
+      "slug": "ritual-of-the-void-6-goa",
+      "description": "Vasuki Vani Entertainment Presents - Ritual Of The Void\r\n\r\nWhen? 📆 28 - 29 December 2026\r\n\r\nWhere? 📍 D pedro , Goa\r\n\r\nLineup :\r\n\r\n★彡[TBA]彡\r\n\r\nTicket Prices Out Now !!",
+      "hasGst": false,
+      "bannerUrl": "https://axess-dev.s3.ap-south-1.amazonaws.com/axess-images/migrated-events/ritual-of-the-void-6-goa-banner.jpeg",
+      "posterUrl": "https://axess-dev.s3.ap-south-1.amazonaws.com/axess-images/migrated-events/ritual-of-the-void-6-goa-poster.jpeg",
+      "thumbnailUrl": null,
+      "locationId": "ee8ef744-b943-4703-835c-320f0f3ea009",
+      "startAt": "2026-12-28T14:30:00.000Z",
+      "endAt": "2026-12-29T03:00:00.000Z",
+      "status": "Published",
+      "mode": "Public",
+      "commissionRate": null,
+      "terms": null,
+      "lineup": "TBA",
+      "source": "axess-v2",
+      "legacyEventId": "245727",
+      "rejectionReason": null,
+      "createdBy": "284a76d1-5f86-46f8-bbea-e7093368ed7e",
+      "createdAt": "2026-08-04T03:20:48.263Z",
+      "updatedAt": "2026-10-14T09:56:54.284Z",
+      "deletedAt": null,
+      "location": {
+        "id": "ee8ef744-b943-4703-835c-320f0f3ea009",
+        "name": "Dpedro",
+        "city": "Goa"
+      },
+      "categories": [],
+      "creator": {
+        "id": "284a76d1-5f86-46f8-bbea-e7093368ed7e",
+        "firstName": "axess",
+        "lastName": "zone"
+      },
+      "eventTickets": [
+        {
+          "id": "06479886-92b8-4d3b-a4f4-3ac47bed61cb",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "b6a22a7e-553c-4fbb-a057-adc1313e48cf",
+          "ticketTypeId": "f9611199-97e1-4c94-803c-2cd2df3816f3",
+          "total": 50,
+          "available": 45,
+          "createdAt": "2026-08-04T03:20:48.267Z",
+          "updatedAt": "2026-10-14T09:56:54.374Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Early Birds - GA ",
+            "amount": "2500",
+            "currency": "INR",
+            "startSaleDate": "2026-08-03T00:00:00.000Z",
+            "endSaleDate": "2026-09-04T18:30:00.000Z"
+          },
+          "saleStatus": "ended"
+        },
+        {
+          "id": "4b827c30-a7ad-4265-b8e4-db8c89bedc0f",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "b6a22a7e-553c-4fbb-a057-adc1313e48cf",
+          "ticketTypeId": "dbf20679-2287-425d-b1fc-d6919c2385c8",
+          "total": 100,
+          "available": 94,
+          "createdAt": "2026-09-05T07:06:21.919Z",
+          "updatedAt": "2026-10-14T09:56:54.378Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Tier 1 - GA ",
+            "amount": "3500",
+            "currency": "INR",
+            "startSaleDate": "2026-09-05T07:05:00.000Z",
+            "endSaleDate": "2026-10-14T05:05:00.000Z"
+          },
+          "saleStatus": "ended"
+        },
+        {
+          "id": "f4e9055f-48f4-4cd5-8e9a-2b441cc8620a",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "b6a22a7e-553c-4fbb-a057-adc1313e48cf",
+          "ticketTypeId": "4a097d9b-c0ae-4bac-80ac-38d55ed7c626",
+          "total": 100,
+          "available": 97,
+          "createdAt": "2026-10-14T09:56:54.382Z",
+          "updatedAt": "2026-11-07T10:27:32.851Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Tier 2 - GA",
+            "amount": "4499",
+            "currency": "INR",
+            "startSaleDate": "2026-10-14T09:56:00.000Z",
+            "endSaleDate": "2026-12-25T09:56:00.000Z"
+          },
+          "saleStatus": "on_sale"
+        }
+      ],
+      "_count": {
+        "orders": 3,
+        "eventTickets": 3
+      },
+      "isComingSoon": false,
+      "lifecycle": "upcoming"
+    },
+    {
+      "id": "5e252f1e-50e7-49c1-8719-c5a8fe3b3599",
+      "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+      "name": "UNMADA VARA  NYE - The Pulse of Prāṇa",
+      "slug": "unmada-vara-goa",
+      "description": "Unmada Vara: The Pulse of Prāṇa\n\nLast time, we stepped into the blessing of madness — into intensity, into letting go, into something raw and real.\n\nThis time, we go deeper.\n\nThe Pulse of Prāṇa is about the life-force that moves through everything — through sound, through people, through moments that stay with you long after they pass. It’s not about escaping… It’s about feeling more. Being more present. More alive.\n\nUnmada Vara has always been about coming together with intention — not just to celebrate, but to reset, reconnect, and return to something real within ourselves.\n\nThis New Year’s, we gather again — for that shared pulse you can’t quite explain, only feel.\n\nTickets are now live on all platforms.\n\nTier 2 is priced at INR 4,000/-.\n\nThe line-up, as always, will never disappoint — worth the wait. Announcements coming soon.\n\nWe come together on 31st December 2026 into 1st January 2027 for a New Year’s Eve gathering to reset mind, body, and soul.\n\nLocation: Goa Venue: To be announced\n\nMore details soon",
+      "hasGst": false,
+      "bannerUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1790489323768-UV_AXESS_BANNER_V01-banner-1790489323506.webp",
+      "posterUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1790489303512-uv_27_axess_post-poster-1790489302740.webp",
+      "thumbnailUrl": null,
+      "locationId": "34abd782-aaa2-4011-bc68-173d0c20868b",
+      "startAt": "2026-12-31T10:30:00.000Z",
+      "endAt": "2027-01-01T04:00:00.000Z",
+      "status": "Published",
+      "mode": "Public",
+      "commissionRate": null,
+      "terms": null,
+      "lineup": null,
+      "source": "axess-v2",
+      "legacyEventId": "235850",
+      "rejectionReason": null,
+      "createdBy": "8a7bc712-6b58-41ac-99d6-1cac9b2b047d",
+      "createdAt": "2026-08-04T03:20:48.286Z",
+      "updatedAt": "2026-10-26T19:00:53.219Z",
+      "deletedAt": null,
+      "location": {
+        "id": "34abd782-aaa2-4011-bc68-173d0c20868b",
+        "name": "Goa",
+        "city": "Goa"
+      },
+      "categories": [
+        {
+          "eventId": "5e252f1e-50e7-49c1-8719-c5a8fe3b3599",
+          "categoryId": "39a448a0-9ead-4068-8542-70aa5faeb3f0",
+          "category": {
+            "id": "39a448a0-9ead-4068-8542-70aa5faeb3f0",
+            "name": "Nightlife"
+          }
+        },
+        {
+          "eventId": "5e252f1e-50e7-49c1-8719-c5a8fe3b3599",
+          "categoryId": "3a31eb50-23a4-4a5f-b3b7-6a4018825748",
+          "category": {
+            "id": "3a31eb50-23a4-4a5f-b3b7-6a4018825748",
+            "name": "Festival"
+          }
+        },
+        {
+          "eventId": "5e252f1e-50e7-49c1-8719-c5a8fe3b3599",
+          "categoryId": "6811a5cf-2b22-4e0f-bdc7-bb8478b39df9",
+          "category": {
+            "id": "6811a5cf-2b22-4e0f-bdc7-bb8478b39df9",
+            "name": "Community"
+          }
+        }
+      ],
+      "creator": {
+        "id": "8a7bc712-6b58-41ac-99d6-1cac9b2b047d",
+        "firstName": "Mycelial",
+        "lastName": "GTC"
+      },
+      "eventTickets": [
+        {
+          "id": "6377e304-863f-441d-87e3-a1d65ef8e6a2",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "5e252f1e-50e7-49c1-8719-c5a8fe3b3599",
+          "ticketTypeId": "99a61551-883f-4553-b8f0-3911652e2ea2",
+          "total": 500,
+          "available": 400,
+          "createdAt": "2026-08-04T03:20:48.290Z",
+          "updatedAt": "2026-10-26T19:00:53.319Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Tier 1",
+            "amount": "2999",
+            "currency": "INR",
+            "startSaleDate": "2026-04-30T00:00:00.000Z",
+            "endSaleDate": "2026-09-09T19:00:00.000Z"
+          },
+          "saleStatus": "ended"
+        },
+        {
+          "id": "741deb6e-55ed-4185-8b77-260ee63e7c8b",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "5e252f1e-50e7-49c1-8719-c5a8fe3b3599",
+          "ticketTypeId": "f88f7e11-7cd4-427a-89a1-0ab7e9b1b984",
+          "total": 100,
+          "available": 39,
+          "createdAt": "2026-09-09T21:03:22.592Z",
+          "updatedAt": "2026-10-26T19:00:53.323Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Tier 2 - GA ",
+            "amount": "3999",
+            "currency": "INR",
+            "startSaleDate": "2026-09-09T21:00:00.000Z",
+            "endSaleDate": "2026-10-26T04:06:00.000Z"
+          },
+          "saleStatus": "ended"
+        },
+        {
+          "id": "319e9a49-c213-4b51-84ea-dbc0768c1683",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "5e252f1e-50e7-49c1-8719-c5a8fe3b3599",
+          "ticketTypeId": "9f24afb9-6081-4236-a2d8-3835769a9b7d",
+          "total": 100,
+          "available": 62,
+          "createdAt": "2026-10-26T18:58:19.664Z",
+          "updatedAt": "2026-11-04T06:44:29.453Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "TIER 3",
+            "amount": "5999",
+            "currency": "INR",
+            "startSaleDate": "2026-10-26T19:00:00.000Z",
+            "endSaleDate": "2026-12-30T20:00:00.000Z"
+          },
+          "saleStatus": "on_sale"
+        },
+        {
+          "id": "b1131c61-7e21-4b75-b0d9-71a2e57b156a",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "5e252f1e-50e7-49c1-8719-c5a8fe3b3599",
+          "ticketTypeId": "504fc733-0afc-4cbe-bff1-26a73decf8ce",
+          "total": 100,
+          "available": 96,
+          "createdAt": "2026-09-09T21:03:22.596Z",
+          "updatedAt": "2026-10-26T19:00:53.326Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Tier 2 - Couple GA ",
+            "amount": "6999",
+            "currency": "INR",
+            "startSaleDate": "2026-09-09T21:01:00.000Z",
+            "endSaleDate": "2026-10-26T18:07:00.000Z"
+          },
+          "saleStatus": "ended"
+        },
+        {
+          "id": "a37640af-a3f2-4a66-a102-c1375e980367",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "5e252f1e-50e7-49c1-8719-c5a8fe3b3599",
+          "ticketTypeId": "1b1458e7-6f4c-4334-9fa8-8bfd95f0bcdd",
+          "total": 100,
+          "available": 99,
+          "createdAt": "2026-10-26T18:58:19.668Z",
+          "updatedAt": "2026-10-30T07:09:42.745Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "TIER 3 - COUPLE",
+            "amount": "9999",
+            "currency": "INR",
+            "startSaleDate": "2026-10-26T19:00:00.000Z",
+            "endSaleDate": "2026-12-26T20:00:00.000Z"
+          },
+          "saleStatus": "on_sale"
+        },
+        {
+          "id": "13835d06-a5b0-40f2-961c-4fe381dc3ea8",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "5e252f1e-50e7-49c1-8719-c5a8fe3b3599",
+          "ticketTypeId": "70683fb5-1afb-4ff7-bb52-6dcbac0c896f",
+          "total": 100,
+          "available": 93,
+          "createdAt": "2026-09-09T21:03:22.599Z",
+          "updatedAt": "2026-10-26T19:00:53.330Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Tier 2 - Group Of Five ",
+            "amount": "17499",
+            "currency": "INR",
+            "startSaleDate": "2026-09-09T21:02:00.000Z",
+            "endSaleDate": "2026-10-26T18:25:00.000Z"
+          },
+          "saleStatus": "ended"
+        },
+        {
+          "id": "521ad58f-6d26-4718-a1c2-7438fb214fb7",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "5e252f1e-50e7-49c1-8719-c5a8fe3b3599",
+          "ticketTypeId": "f86dba74-5e39-4fe6-9c0c-626ce0ef4eb8",
+          "total": 50,
+          "available": 49,
+          "createdAt": "2026-10-26T18:58:19.671Z",
+          "updatedAt": "2026-11-03T16:12:41.894Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "TIER 3 - GROUP OF 5",
+            "amount": "24999",
+            "currency": "INR",
+            "startSaleDate": "2026-10-26T19:00:00.000Z",
+            "endSaleDate": "2026-12-30T20:00:00.000Z"
+          },
+          "saleStatus": "on_sale"
+        }
+      ],
+      "_count": {
+        "orders": 34,
+        "eventTickets": 7
+      },
+      "isComingSoon": false,
+      "lifecycle": "upcoming"
+    },
+    {
+      "id": "b70c4aa7-58a7-4c51-93f6-a0b0e675aa7d",
+      "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+      "name": "Vanaghotra The Decade Ritual",
+      "slug": "vanaghotra-the-decade-ritual-goa",
+      "description": "Vanaghotra Presents - Vanaghotra The Decade Ritual\r\n\r\nWhen? 📆 31 December 2026\r\n\r\nWhere? 📍 D Pedro , Goa\r\n\r\nLineup :\r\n\r\n★彡[TBA]彡\r\n\r\nTicket Prices Out Now !!",
+      "hasGst": false,
+      "bannerUrl": "https://axess-dev.s3.ap-south-1.amazonaws.com/axess-images/migrated-events/vanaghotra-the-decade-ritual-goa-banner.png",
+      "posterUrl": "https://axess-dev.s3.ap-south-1.amazonaws.com/axess-images/migrated-events/vanaghotra-the-decade-ritual-goa-poster.jpeg",
+      "thumbnailUrl": null,
+      "locationId": "ee8ef744-b943-4703-835c-320f0f3ea009",
+      "startAt": "2026-12-31T12:00:00.000Z",
+      "endAt": "2027-01-01T04:30:00.000Z",
+      "status": "Published",
+      "mode": "Public",
+      "commissionRate": null,
+      "terms": null,
+      "lineup": "TBA",
+      "source": "axess-v2",
+      "legacyEventId": "234786",
+      "rejectionReason": null,
+      "createdBy": "d13beb53-da79-4fcd-9d80-8b81d3bc2399",
+      "createdAt": "2026-08-04T03:20:48.300Z",
+      "updatedAt": "2026-11-02T12:28:22.039Z",
+      "deletedAt": null,
+      "location": {
+        "id": "ee8ef744-b943-4703-835c-320f0f3ea009",
+        "name": "Dpedro",
+        "city": "Goa"
+      },
+      "categories": [
+        {
+          "eventId": "b70c4aa7-58a7-4c51-93f6-a0b0e675aa7d",
+          "categoryId": "3a31eb50-23a4-4a5f-b3b7-6a4018825748",
+          "category": {
+            "id": "3a31eb50-23a4-4a5f-b3b7-6a4018825748",
+            "name": "Festival"
+          }
+        }
+      ],
+      "creator": {
+        "id": "d13beb53-da79-4fcd-9d80-8b81d3bc2399",
+        "firstName": "Vanaghotra",
+        "lastName": "Records"
+      },
+      "eventTickets": [
+        {
+          "id": "15eb5468-97fc-472a-9ed9-431901a51d20",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "b70c4aa7-58a7-4c51-93f6-a0b0e675aa7d",
+          "ticketTypeId": "1d9c7eaf-cf93-4148-9354-34eb1b6a15f2",
+          "total": 50,
+          "available": 50,
+          "createdAt": "2026-08-04T03:20:48.304Z",
+          "updatedAt": "2026-11-02T12:28:22.055Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Early Birds - GA ",
+            "amount": "1999",
+            "currency": "INR",
+            "startSaleDate": "2026-04-22T00:00:00.000Z",
+            "endSaleDate": "2026-05-04T00:00:00.000Z"
+          },
+          "saleStatus": "ended"
+        },
+        {
+          "id": "bf1506ed-1ad8-497f-bac8-d3f5a2aceef4",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "b70c4aa7-58a7-4c51-93f6-a0b0e675aa7d",
+          "ticketTypeId": "81095368-d621-4e16-8030-d576840578b8",
+          "total": 200,
+          "available": 185,
+          "createdAt": "2026-08-04T03:20:48.308Z",
+          "updatedAt": "2026-11-02T12:28:22.051Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Tier 1 - GA",
+            "amount": "3499",
+            "currency": "INR",
+            "startSaleDate": "2026-05-04T00:00:00.000Z",
+            "endSaleDate": "2026-11-01T00:00:00.000Z"
+          },
+          "saleStatus": "ended"
+        },
+        {
+          "id": "c7658b0b-fcf3-49eb-be24-23edf34c6e5b",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "b70c4aa7-58a7-4c51-93f6-a0b0e675aa7d",
+          "ticketTypeId": "bcb0f68c-bf8d-4dd5-bc47-56030452e447",
+          "total": 100,
+          "available": 100,
+          "createdAt": "2026-11-02T12:28:22.059Z",
+          "updatedAt": "2026-11-02T12:28:22.059Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Tier 2 - GA",
+            "amount": "4999",
+            "currency": "INR",
+            "startSaleDate": "2026-11-02T06:08:00.000Z",
+            "endSaleDate": "2026-12-30T06:08:00.000Z"
+          },
+          "saleStatus": "on_sale"
+        }
+      ],
+      "_count": {
+        "orders": 2,
+        "eventTickets": 3
+      },
+      "isComingSoon": false,
+      "lifecycle": "upcoming"
+    },
+    {
+      "id": "cef6fecd-83ba-4731-aa12-2d13c2282d2e",
+      "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+      "name": "Kala Kestro",
+      "slug": "kala-kestro-goa",
+      "description": "Viruksham Presents - Kala Kestro\r\n\r\nWhen? 📆 02 January 2027\r\n\r\nWhere? 📍 D Pedro , Goa\r\n\r\nLineup :\r\n\r\n★彡[TBA]彡\r\n\r\nTicket Prices Out Now !!",
+      "hasGst": false,
+      "bannerUrl": "https://axess-dev.s3.ap-south-1.amazonaws.com/axess-images/migrated-events/kala-kestro-goa-banner.jpeg",
+      "posterUrl": "https://axess-dev.s3.ap-south-1.amazonaws.com/axess-images/migrated-events/kala-kestro-goa-poster.jpeg",
+      "thumbnailUrl": null,
+      "locationId": "f067ae82-b140-48ec-8fbf-8ee3e2a747c8",
+      "startAt": "2027-01-02T14:00:00.000Z",
+      "endAt": "2027-01-04T03:00:00.000Z",
+      "status": "Published",
+      "mode": "Public",
+      "commissionRate": null,
+      "terms": null,
+      "lineup": "TBA",
+      "source": "axess-v2",
+      "legacyEventId": "244797",
+      "rejectionReason": null,
+      "createdBy": "c292ab10-f76f-4f68-b32d-5a58d507f764",
+      "createdAt": "2026-08-04T03:20:48.321Z",
+      "updatedAt": "2026-09-16T04:29:45.565Z",
+      "deletedAt": null,
+      "location": {
+        "id": "f067ae82-b140-48ec-8fbf-8ee3e2a747c8",
+        "name": "D Pedro",
+        "city": "Goa"
+      },
+      "categories": [],
+      "creator": {
+        "id": "c292ab10-f76f-4f68-b32d-5a58d507f764",
+        "firstName": "Surya",
+        "lastName": "Viruksham"
+      },
+      "eventTickets": [
+        {
+          "id": "3e12e34c-32c4-4078-879d-f6c7445b8f79",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "cef6fecd-83ba-4731-aa12-2d13c2282d2e",
+          "ticketTypeId": "679cf5fb-67fd-4e86-bad1-f2eb8d90c6fc",
+          "total": 500,
+          "available": 445,
+          "createdAt": "2026-08-04T03:20:48.325Z",
+          "updatedAt": "2026-10-13T05:46:03.547Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Phase 1  ",
+            "amount": "4999",
+            "currency": "INR",
+            "startSaleDate": "2026-07-13T00:00:00.000Z",
+            "endSaleDate": "2026-10-13T05:36:00.000Z"
+          },
+          "saleStatus": "ended"
+        },
+        {
+          "id": "b9ed655c-761a-4c5a-a410-32eba7a03162",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "cef6fecd-83ba-4731-aa12-2d13c2282d2e",
+          "ticketTypeId": "8daa20fc-f9c8-423d-ba95-46460d8366e1",
+          "total": 500,
+          "available": 496,
+          "createdAt": "2026-10-13T05:16:46.692Z",
+          "updatedAt": "2026-10-30T04:29:23.727Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Phase 2 ",
+            "amount": "5999",
+            "currency": "INR",
+            "startSaleDate": "2026-10-13T04:49:00.000Z",
+            "endSaleDate": "2026-11-28T04:49:00.000Z"
+          },
+          "saleStatus": "on_sale"
+        }
+      ],
+      "_count": {
+        "orders": 16,
+        "eventTickets": 2
+      },
+      "isComingSoon": false,
+      "lifecycle": "upcoming"
+    },
+    {
+      "id": "c033d1df-558d-4c98-a785-1fe7876d5d73",
+      "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+      "name": "Roots Of Trance Festival",
+      "slug": "roots-of-trance-goa",
+      "description": "Spinning Shivvay Presents - Roots Of Trance\r\n\r\nWhen? 📆 06 - 08 January 2026\r\n\r\nWhere? 📍D Pedro , Goa\r\n\r\nLineup :\r\n\r\n★彡[ TBA ]彡\r\n\r\nTicket Prices Out Now !",
+      "hasGst": false,
+      "bannerUrl": "https://axess-dev.s3.ap-south-1.amazonaws.com/axess-images/migrated-events/roots-of-trance-goa-banner.jpg",
+      "posterUrl": "https://axess-dev.s3.ap-south-1.amazonaws.com/axess-images/migrated-events/roots-of-trance-goa-poster.jpg",
+      "thumbnailUrl": null,
+      "locationId": "ee8ef744-b943-4703-835c-320f0f3ea009",
+      "startAt": "2027-01-06T14:30:00.000Z",
+      "endAt": "2027-01-08T03:00:00.000Z",
+      "status": "Published",
+      "mode": "Public",
+      "commissionRate": null,
+      "terms": null,
+      "lineup": "TBA",
+      "source": "axess-v2",
+      "legacyEventId": "244273",
+      "rejectionReason": null,
+      "createdBy": "284a76d1-5f86-46f8-bbea-e7093368ed7e",
+      "createdAt": "2026-08-04T03:20:48.329Z",
+      "updatedAt": "2026-09-10T14:12:10.180Z",
+      "deletedAt": null,
+      "location": {
+        "id": "ee8ef744-b943-4703-835c-320f0f3ea009",
+        "name": "Dpedro",
+        "city": "Goa"
+      },
+      "categories": [],
+      "creator": {
+        "id": "284a76d1-5f86-46f8-bbea-e7093368ed7e",
+        "firstName": "axess",
+        "lastName": "zone"
+      },
+      "eventTickets": [
+        {
+          "id": "7b128e9c-29e2-48fa-8e62-775598261342",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "c033d1df-558d-4c98-a785-1fe7876d5d73",
+          "ticketTypeId": "8b166b03-d8ac-4ed3-8eea-1cb186bfca32",
+          "total": 50,
+          "available": 46,
+          "createdAt": "2026-08-04T03:20:48.333Z",
+          "updatedAt": "2026-11-18T15:01:29.388Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Early Bird - Festival ",
+            "amount": "4500",
+            "currency": "INR",
+            "startSaleDate": "2026-07-04T00:00:00.000Z",
+            "endSaleDate": "2027-01-06T00:00:00.000Z"
+          },
+          "saleStatus": "on_sale"
+        }
+      ],
+      "_count": {
+        "orders": 2,
+        "eventTickets": 1
+      },
+      "isComingSoon": false,
+      "lifecycle": "upcoming"
+    },
+    {
+      "id": "19083e5a-1175-4ec3-94b0-509609dd6892",
+      "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+      "name": "Once Upon A Tme In Goa",
+      "slug": "once-upon-a-tme-in-goa-13-january-2026-goa-v1kdpv",
+      "description": "Cipher Events  Presents -  Once upon a time in goa \n\nWhen? 📆 13 January 2027\n\nWhere? 📍D Pedro  , Goa\n\nTicket Prices Out Now !!",
+      "hasGst": false,
+      "bannerUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1786975071640-once_upon_a_time_in_goa_axess_banner-banner-1786975071098.webp",
+      "posterUrl": "https://axess-prod.s3.ap-south-1.amazonaws.com/axess-images/5ee3431f-e708-43cf-b721-c1a859c21a64/events/1786975065988-once_upon_a_time_in_goa_axess_post.jpg-poster-1786975065173.webp",
+      "thumbnailUrl": null,
+      "locationId": "f067ae82-b140-48ec-8fbf-8ee3e2a747c8",
+      "startAt": "2027-01-13T12:30:00.000Z",
+      "endAt": "2027-01-14T04:30:00.000Z",
+      "status": "Published",
+      "mode": "Public",
+      "commissionRate": null,
+      "terms": {
+        "content": "Only entry "
+      },
+      "lineup": null,
+      "source": null,
+      "legacyEventId": null,
+      "rejectionReason": null,
+      "createdBy": "9391ab79-ff08-46bf-a974-4ff5b3e0c955",
+      "createdAt": "2026-08-17T14:04:12.588Z",
+      "updatedAt": "2026-11-12T05:49:39.404Z",
+      "deletedAt": null,
+      "location": {
+        "id": "f067ae82-b140-48ec-8fbf-8ee3e2a747c8",
+        "name": "D Pedro",
+        "city": "Goa"
+      },
+      "categories": [
+        {
+          "eventId": "19083e5a-1175-4ec3-94b0-509609dd6892",
+          "categoryId": "ab08f0a2-d4e5-46b9-b778-bfd18353a82f",
+          "category": {
+            "id": "ab08f0a2-d4e5-46b9-b778-bfd18353a82f",
+            "name": "Music"
+          }
+        },
+        {
+          "eventId": "19083e5a-1175-4ec3-94b0-509609dd6892",
+          "categoryId": "39a448a0-9ead-4068-8542-70aa5faeb3f0",
+          "category": {
+            "id": "39a448a0-9ead-4068-8542-70aa5faeb3f0",
+            "name": "Nightlife"
+          }
+        }
+      ],
+      "creator": {
+        "id": "9391ab79-ff08-46bf-a974-4ff5b3e0c955",
+        "firstName": "Cipher",
+        "lastName": "Events"
+      },
+      "eventTickets": [
+        {
+          "id": "6a3aeff9-4da3-43c4-8e67-8ce16e7bdb5b",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "19083e5a-1175-4ec3-94b0-509609dd6892",
+          "ticketTypeId": "2f44b366-c974-4686-a986-5d62d1314ca1",
+          "total": 100,
+          "available": 100,
+          "createdAt": "2026-08-17T14:04:12.812Z",
+          "updatedAt": "2026-11-12T05:49:39.414Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Early Bird GA ",
+            "amount": "1800",
+            "currency": "INR",
+            "startSaleDate": "2026-08-17T14:02:00.000Z",
+            "endSaleDate": "2026-09-21T05:30:00.000Z"
+          },
+          "saleStatus": "ended"
+        },
+        {
+          "id": "7eb62d35-40f3-42cc-949a-80064a73c7a6",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "19083e5a-1175-4ec3-94b0-509609dd6892",
+          "ticketTypeId": "278dc0c7-44a8-478a-b6d5-ac8b085debb1",
+          "total": 100,
+          "available": 93,
+          "createdAt": "2026-09-21T07:51:54.604Z",
+          "updatedAt": "2026-11-12T05:49:39.419Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Tier 1 - GA",
+            "amount": "2000",
+            "currency": "INR",
+            "startSaleDate": "2026-09-21T07:51:00.000Z",
+            "endSaleDate": "2026-10-10T07:51:00.000Z"
+          },
+          "saleStatus": "ended"
+        },
+        {
+          "id": "e649019b-3246-4d40-9390-73b9a80a8e15",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "19083e5a-1175-4ec3-94b0-509609dd6892",
+          "ticketTypeId": "0d3d45ce-ca8a-4742-b50a-bbd66d719be3",
+          "total": 100,
+          "available": 100,
+          "createdAt": "2026-10-10T15:10:06.671Z",
+          "updatedAt": "2026-11-12T05:49:39.422Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Tier 2 - GA",
+            "amount": "2200",
+            "currency": "INR",
+            "startSaleDate": "2026-10-10T14:51:00.000Z",
+            "endSaleDate": "2026-10-22T14:51:00.000Z"
+          },
+          "saleStatus": "ended"
+        },
+        {
+          "id": "8571a5cf-fa0f-4b42-8f38-c7a41cfdf343",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "19083e5a-1175-4ec3-94b0-509609dd6892",
+          "ticketTypeId": "c20042d3-4ae3-4215-a730-ecc06bff8729",
+          "total": 100,
+          "available": 98,
+          "createdAt": "2026-10-23T10:42:51.596Z",
+          "updatedAt": "2026-11-14T14:38:10.655Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Tier 3",
+            "amount": "3000",
+            "currency": "INR",
+            "startSaleDate": "2026-11-11T19:41:00.000Z",
+            "endSaleDate": "2026-12-30T19:41:00.000Z"
+          },
+          "saleStatus": "on_sale"
+        }
+      ],
+      "_count": {
+        "orders": 3,
+        "eventTickets": 4
+      },
+      "isComingSoon": false,
+      "lifecycle": "upcoming"
+    },
+    {
+      "id": "5f0abf75-4efb-454f-8517-e23ba4d62b2b",
+      "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+      "name": "Ethnoentheo Ritual",
+      "slug": "ethnoentheo-ritual-goa-3",
+      "description": "Ethnoentheo Presents - Ethnoentheo Ritual\r\n\r\nWhen? 📆 23 - 25 January 2025\r\n\r\nWhere? 📍 D Pedro , Goa\r\n\r\nLineup :\r\n\r\n★彡[TBA]彡\r\n\r\nTicket Prices Out Now !!",
+      "hasGst": false,
+      "bannerUrl": "https://axess-dev.s3.ap-south-1.amazonaws.com/axess-images/migrated-events/ethnoentheo-ritual-goa-3-banner.png",
+      "posterUrl": "https://axess-dev.s3.ap-south-1.amazonaws.com/axess-images/migrated-events/ethnoentheo-ritual-goa-3-poster.jpeg",
+      "thumbnailUrl": null,
+      "locationId": "f067ae82-b140-48ec-8fbf-8ee3e2a747c8",
+      "startAt": "2027-01-23T12:30:00.000Z",
+      "endAt": "2027-01-25T04:00:00.000Z",
+      "status": "Published",
+      "mode": "Public",
+      "commissionRate": null,
+      "terms": null,
+      "lineup": "TBA",
+      "source": "axess-v2",
+      "legacyEventId": "243808",
+      "rejectionReason": null,
+      "createdBy": "e15b8355-502e-4e13-a4b9-f03c8dc26b68",
+      "createdAt": "2026-08-04T03:20:48.341Z",
+      "updatedAt": "2026-10-31T13:26:21.477Z",
+      "deletedAt": null,
+      "location": {
+        "id": "f067ae82-b140-48ec-8fbf-8ee3e2a747c8",
+        "name": "D Pedro",
+        "city": "Goa"
+      },
+      "categories": [
+        {
+          "eventId": "5f0abf75-4efb-454f-8517-e23ba4d62b2b",
+          "categoryId": "ab08f0a2-d4e5-46b9-b778-bfd18353a82f",
+          "category": {
+            "id": "ab08f0a2-d4e5-46b9-b778-bfd18353a82f",
+            "name": "Music"
+          }
+        },
+        {
+          "eventId": "5f0abf75-4efb-454f-8517-e23ba4d62b2b",
+          "categoryId": "39a448a0-9ead-4068-8542-70aa5faeb3f0",
+          "category": {
+            "id": "39a448a0-9ead-4068-8542-70aa5faeb3f0",
+            "name": "Nightlife"
+          }
+        },
+        {
+          "eventId": "5f0abf75-4efb-454f-8517-e23ba4d62b2b",
+          "categoryId": "6811a5cf-2b22-4e0f-bdc7-bb8478b39df9",
+          "category": {
+            "id": "6811a5cf-2b22-4e0f-bdc7-bb8478b39df9",
+            "name": "Community"
+          }
+        },
+        {
+          "eventId": "5f0abf75-4efb-454f-8517-e23ba4d62b2b",
+          "categoryId": "3a31eb50-23a4-4a5f-b3b7-6a4018825748",
+          "category": {
+            "id": "3a31eb50-23a4-4a5f-b3b7-6a4018825748",
+            "name": "Festival"
+          }
+        }
+      ],
+      "creator": {
+        "id": "e15b8355-502e-4e13-a4b9-f03c8dc26b68",
+        "firstName": "Amal ",
+        "lastName": "G Ravi"
+      },
+      "eventTickets": [
+        {
+          "id": "5bfc54df-99ec-4bfe-a883-e23c933f88e6",
+          "tenantId": "5ee3431f-e708-43cf-b721-c1a859c21a64",
+          "eventId": "5f0abf75-4efb-454f-8517-e23ba4d62b2b",
+          "ticketTypeId": "cb1cded7-2dec-4823-8fb8-79c9c10c670a",
+          "total": 200,
+          "available": 193,
+          "createdAt": "2026-08-04T03:20:48.344Z",
+          "updatedAt": "2026-10-31T13:26:21.642Z",
+          "deletedAt": null,
+          "ticketType": {
+            "name": "Tier 2 - GA",
+            "amount": "5999",
+            "currency": "INR",
+            "startSaleDate": "2026-10-30T11:01:00.000Z",
+            "endSaleDate": "2027-01-15T11:31:00.000Z"
+          },
+          "saleStatus": "on_sale"
+        }
+      ],
+      "_count": {
+        "orders": 3,
+        "eventTickets": 1
+      },
+      "isComingSoon": false,
+      "lifecycle": "upcoming"
+    }
+  ],
+  "meta": {
+    "total": 16,
+    "page": 1,
+    "limit": 20,
+    "totalPages": 1
+  }
+}
