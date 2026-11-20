@@ -113,4 +113,126 @@ router.post('/:id/refund', authenticate, requireRole('ORGANIZER', 'ADMIN'), (req
   });
 });
 
+// POST /api/tickets/:id/transfer - District/DICE style peer-to-peer anti-fraud ticket transfer
+router.post('/:id/transfer', authenticate, (req, res) => {
+  const { recipientEmail, recipientName, recipientPhone } = req.body;
+
+  if (!recipientEmail) {
+    return res.status(400).json({ error: 'Recipient email address is required for ticket transfer.' });
+  }
+
+  const ticket = db.prepare('SELECT * FROM tickets WHERE id = ?').get(req.params.id);
+  if (!ticket) {
+    return res.status(404).json({ error: 'Ticket not found.' });
+  }
+
+  // Custody verification
+  if (ticket.user_id !== req.user.id && req.user.role !== 'ADMIN') {
+    return res.status(403).json({ error: 'You are not the authorized custodian of this ticket pass.' });
+  }
+
+  if (ticket.status !== 'VALID') {
+    return res.status(400).json({ error: `Cannot transfer ticket with status: ${ticket.status}. Only VALID passes can be transferred.` });
+  }
+
+  if (recipientEmail.toLowerCase() === req.user.email.toLowerCase()) {
+    return res.status(400).json({ error: 'Cannot transfer ticket to your own account.' });
+  }
+
+  // 1. Resolve or create recipient account
+  let recipient = db.prepare('SELECT * FROM users WHERE LOWER(email) = LOWER(?)').get(recipientEmail);
+  if (!recipient) {
+    const newUserId = `usr_${Date.now()}_${Math.random().toString(36).substring(2, 6)}`;
+    db.prepare(`
+      INSERT INTO users (id, email, password_hash, name, role, phone)
+      VALUES (?, ?, ?, ?, 'USER', ?)
+    `).run(
+      newUserId,
+      recipientEmail.toLowerCase(),
+      '$2a$10$9999999999999999999999', // provisional hash until claimed
+      recipientName || recipientEmail.split('@')[0],
+      recipientPhone || null
+    );
+    recipient = db.prepare('SELECT * FROM users WHERE id = ?').get(newUserId);
+  }
+
+  const newTicketId = `tkt_trf_${Date.now()}`;
+  const newTicketCode = `AXS-TRF-${Math.random().toString(36).substring(2, 8).toUpperCase()}`;
+  const timestamp = new Date().toISOString();
+
+  // Create new signed QR payload for recipient
+  const newQrPayload = JSON.stringify({
+    ticket_code: newTicketCode,
+    event_id: ticket.event_id,
+    tier_id: ticket.tier_id,
+    attendee_name: recipient.name,
+    attendee_email: recipient.email,
+    transferred_from: req.user.email,
+    issued_at: timestamp,
+    sig: `sig_trf_${Math.random().toString(36).substring(2, 18)}`
+  });
+
+  const transferTx = db.transaction(() => {
+    // 2. Invalidate original ticket (District style anti-duplication)
+    db.prepare(`
+      UPDATE tickets
+      SET status = 'TRANSFERRED',
+          qr_payload = json_set(qr_payload, '$.transferred_to', ?, '$.invalidated_at', ?)
+      WHERE id = ?
+    `).run(recipient.email, timestamp, ticket.id);
+
+    // 3. Issue brand new ticket pass to recipient
+    db.prepare(`
+      INSERT INTO tickets (
+        id, ticket_code, order_id, event_id, tier_id, user_id,
+        attendee_name, attendee_email, attendee_phone, security_signature,
+        status, qr_payload, created_at
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'VALID', ?, ?)
+    `).run(
+      newTicketId,
+      newTicketCode,
+      ticket.order_id,
+      ticket.event_id,
+      ticket.tier_id,
+      recipient.id,
+      recipient.name,
+      recipient.email,
+      recipient.phone || recipientPhone || null,
+      `trf_sec_sig_${Date.now()}`,
+      newQrPayload,
+      timestamp
+    );
+
+    // 4. Audit trail
+    db.prepare(`
+      INSERT INTO audit_logs (id, action, actor_id, details)
+      VALUES (?, 'TICKET_P2P_TRANSFER', ?, ?)
+    `).run(
+      `aud_trf_${Date.now()}`,
+      req.user.id,
+      `P2P Ticket Transfer: Pass ${ticket.ticket_code} custody transferred from ${req.user.email} to ${recipient.email}. New pass issued: ${newTicketCode}`
+    );
+  });
+
+  transferTx();
+
+  const newTicket = db.prepare('SELECT * FROM tickets WHERE id = ?').get(newTicketId);
+
+  // Real-time socket updates for both parties
+  broadcastUserTicketUpdate(req.user.id, { ticketId: ticket.id, status: 'TRANSFERRED' });
+  broadcastUserTicketUpdate(recipient.id, newTicket);
+
+  res.json({
+    success: true,
+    message: `Ticket pass successfully transferred to ${recipient.email}. Previous QR code has been safely invalidated to prevent duplicate entries.`,
+    transferredTicket: {
+      originalCode: ticket.ticket_code,
+      status: 'TRANSFERRED',
+      newTicketCode,
+      recipientEmail: recipient.email,
+      recipientName: recipient.name
+    }
+  });
+});
+
 export default router;

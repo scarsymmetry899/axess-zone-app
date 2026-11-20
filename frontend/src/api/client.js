@@ -128,6 +128,15 @@ function handleOfflineFallback(endpoint, options = {}) {
     return { success: true, tickets: savedTickets };
   }
 
+  // 7b. Ticket Transfer Fallback
+  if (pathname.includes('/transfer')) {
+    return {
+      success: true,
+      message: 'Ticket pass successfully transferred. Previous QR code invalidated.',
+      transferredTicket: { status: 'TRANSFERRED' }
+    };
+  }
+
   // 8. Gate Check-in
   if (pathname === '/gate/verify') {
     return { success: true, verified: true, message: 'Valid Entry Granted' };
@@ -283,6 +292,7 @@ export const api = {
   getMyTickets: () => apiRequest('/tickets/my-tickets'),
   getTicket: (id) => apiRequest(`/tickets/${id}`),
   refundTicket: (id) => apiRequest(`/tickets/${id}/refund`, { method: 'POST' }),
+  transferTicket: (id, payload) => apiRequest(`/tickets/${id}/transfer`, { method: 'POST', body: JSON.stringify(payload) }),
 
   // Gate Check-in
   verifyGateScan: (payload) => apiRequest('/gate/verify', { method: 'POST', body: JSON.stringify(payload) }),

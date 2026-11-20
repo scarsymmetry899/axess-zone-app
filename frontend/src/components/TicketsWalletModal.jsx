@@ -3,7 +3,7 @@ import { QRCodeSVG } from 'qrcode.react';
 import { api } from '../api/client.js';
 import { useAuth } from '../context/AuthContext.jsx';
 import { useSocket } from '../context/SocketContext.jsx';
-import { X, Ticket, Calendar, MapPin, Printer, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { X, Ticket, Calendar, MapPin, Printer, ShieldCheck, CheckCircle2, ArrowRightLeft, Lock, Send, AlertTriangle } from 'lucide-react';
 
 export default function TicketsWalletModal({ onClose }) {
   const { user, isAuthenticated, switchRole } = useAuth();
@@ -13,6 +13,14 @@ export default function TicketsWalletModal({ onClose }) {
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState('passes'); // 'passes' or 'orders'
   const [selectedTicket, setSelectedTicket] = useState(null);
+
+  // Transfer Ticket Modal state
+  const [transferTargetTicket, setTransferTargetTicket] = useState(null);
+  const [transferEmail, setTransferEmail] = useState('');
+  const [transferName, setTransferName] = useState('');
+  const [transferPhone, setTransferPhone] = useState('');
+  const [transferring, setTransferring] = useState(false);
+  const [transferSuccessMsg, setTransferSuccessMsg] = useState('');
 
   const loadTickets = () => {
     if (!isAuthenticated) {
@@ -55,6 +63,35 @@ export default function TicketsWalletModal({ onClose }) {
       return () => socket.off('gate:checkin', handleGateCheckIn);
     }
   }, [socket]);
+
+  const handleTransferSubmit = async (e) => {
+    e.preventDefault();
+    if (!transferEmail) {
+      alert('Please provide recipient email.');
+      return;
+    }
+    setTransferring(true);
+    try {
+      const res = await api.transferTicket(transferTargetTicket.id, {
+        recipientEmail: transferEmail,
+        recipientName: transferName,
+        recipientPhone: transferPhone
+      });
+      setTransferSuccessMsg(res.message || 'Ticket pass transferred successfully!');
+      setTimeout(() => {
+        setTransferSuccessMsg('');
+        setTransferTargetTicket(null);
+        setTransferEmail('');
+        setTransferName('');
+        setTransferPhone('');
+        loadTickets();
+      }, 2500);
+    } catch (err) {
+      alert(`Transfer failed: ${err.message}`);
+    } finally {
+      setTransferring(false);
+    }
+  };
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 bg-black/85 backdrop-blur-md animate-in fade-in duration-200">
@@ -189,33 +226,57 @@ export default function TicketsWalletModal({ onClose }) {
                           </div>
                         </div>
 
-                        {/* Right Stub: Scannable QR Pass */}
+                        {/* Right Stub: Scannable QR Pass or Transferred State */}
                         <div className="w-full md:w-56 bg-[#131313] border-t md:border-t-0 md:border-l border-[#212121] p-5 flex flex-col items-center justify-center gap-3">
-                          <div className="p-3 bg-white rounded-[12px] shadow-sm">
-                            <QRCodeSVG
-                              value={t.qr_payload || t.ticket_code}
-                              size={120}
-                              level="H"
-                              includeMargin={false}
-                            />
-                          </div>
+                          {t.status === 'TRANSFERRED' ? (
+                            <div className="p-4 bg-[#181820] border border-[#2E2E38] rounded-[14px] text-center flex flex-col items-center gap-2">
+                              <Lock className="w-7 h-7 text-[#A855F7]" />
+                              <span className="text-[11px] font-semibold text-white">Transferred</span>
+                              <span className="text-[10px] text-[#888] leading-tight">
+                                Pass custody transferred to recipient. Original QR revoked.
+                              </span>
+                            </div>
+                          ) : (
+                            <>
+                              <div className="p-3 bg-white rounded-[12px] shadow-sm">
+                                <QRCodeSVG
+                                  value={t.qr_payload || t.ticket_code}
+                                  size={120}
+                                  level="H"
+                                  includeMargin={false}
+                                />
+                              </div>
 
-                          <div className="text-center">
-                            <span className="text-[11px] font-mono font-bold text-white tracking-wider block">
-                              {t.ticket_code}
-                            </span>
-                            <span className="text-[9px] text-[#606060] font-mono block mt-0.5">
-                              SCAN AT GUESTLIST / GATE DESK
-                            </span>
-                          </div>
+                              <div className="text-center">
+                                <span className="text-[11px] font-mono font-bold text-white tracking-wider block">
+                                  {t.ticket_code}
+                                </span>
+                                <span className="text-[9px] text-[#606060] font-mono block mt-0.5">
+                                  SCAN AT GUESTLIST / GATE DESK
+                                </span>
+                              </div>
+                            </>
+                          )}
 
-                          <button
-                            onClick={() => window.print()}
-                            className="text-[10px] text-[#848484] hover:text-white flex items-center gap-1 font-heading transition-colors"
-                          >
-                            <Printer className="w-3 h-3" />
-                            <span>Print / Save PDF</span>
-                          </button>
+                          <div className="flex items-center gap-3 pt-1">
+                            <button
+                              onClick={() => window.print()}
+                              className="text-[10px] text-[#848484] hover:text-white flex items-center gap-1 font-heading transition-colors"
+                            >
+                              <Printer className="w-3 h-3" />
+                              <span>Print</span>
+                            </button>
+
+                            {t.status === 'VALID' && (
+                              <button
+                                onClick={() => setTransferTargetTicket(t)}
+                                className="text-[10px] text-[#A855F7] hover:text-[#C084FC] flex items-center gap-1 font-heading transition-colors font-semibold"
+                              >
+                                <ArrowRightLeft className="w-3 h-3" />
+                                <span>Transfer</span>
+                              </button>
+                            )}
+                          </div>
                         </div>
                       </div>
                     ))}
@@ -260,6 +321,101 @@ export default function TicketsWalletModal({ onClose }) {
                 )}
               </div>
             )}
+          </div>
+        )}
+
+        {/* Peer-to-Peer Transfer Dialog (District/DICE Anti-Fraud Mechanism) */}
+        {transferTargetTicket && (
+          <div className="fixed inset-0 z-60 flex items-center justify-center p-4 bg-black/90 backdrop-blur-md animate-in fade-in duration-200">
+            <div className="w-full max-w-md bg-[#131317] border border-[#2B2B36] rounded-[20px] shadow-2xl p-6 flex flex-col gap-4">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 rounded-xl bg-[#28183D] border border-[#502E7A] flex items-center justify-center">
+                    <ArrowRightLeft className="w-4 h-4 text-[#C084FC]" />
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-semibold text-white">Transfer Ticket Pass</h4>
+                    <p className="text-[11px] text-[#888] font-mono">{transferTargetTicket.ticket_code}</p>
+                  </div>
+                </div>
+                <button
+                  onClick={() => setTransferTargetTicket(null)}
+                  className="w-7 h-7 rounded-full bg-[#1F1F26] text-[#888] hover:text-white flex items-center justify-center"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              </div>
+
+              {transferSuccessMsg ? (
+                <div className="py-6 flex flex-col items-center text-center gap-2 animate-in zoom-in-95">
+                  <CheckCircle2 className="w-10 h-10 text-[#4ADE80]" />
+                  <h5 className="text-sm font-semibold text-white">Custody Handed Over</h5>
+                  <p className="text-xs text-[#888]">{transferSuccessMsg}</p>
+                </div>
+              ) : (
+                <form onSubmit={handleTransferSubmit} className="flex flex-col gap-3.5">
+                  <div className="p-3 rounded-xl bg-[#1C182A] border border-[#3A2859] flex items-start gap-2.5 text-xs text-[#D8B4FE]">
+                    <AlertTriangle className="w-4 h-4 text-[#C084FC] shrink-0 mt-0.5" />
+                    <p className="text-[11px] leading-relaxed">
+                      <strong>District / DICE Anti-Duplication Safeguard:</strong> Once confirmed, this ticket’s QR code will be permanently revoked from your wallet. A fresh cryptographic pass will be assigned directly to the recipient.
+                    </p>
+                  </div>
+
+                  <div className="flex flex-col gap-1.5">
+                    <label className="text-xs text-[#AAA]">Recipient Email Address *</label>
+                    <input
+                      type="email"
+                      required
+                      value={transferEmail}
+                      onChange={(e) => setTransferEmail(e.target.value)}
+                      placeholder="friend@axess.zone"
+                      className="px-3.5 py-2.5 rounded-xl bg-[#0D0D10] border border-[#26262F] text-white text-xs outline-none focus:border-white/40"
+                    />
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="flex flex-col gap-1.5">
+                      <label className="text-xs text-[#AAA]">Recipient Name</label>
+                      <input
+                        type="text"
+                        value={transferName}
+                        onChange={(e) => setTransferName(e.target.value)}
+                        placeholder="e.g. Maya Sen"
+                        className="px-3.5 py-2 rounded-xl bg-[#0D0D10] border border-[#26262F] text-white text-xs outline-none"
+                      />
+                    </div>
+                    <div className="flex flex-col gap-1.5">
+                      <label className="text-xs text-[#AAA]">Phone (Optional)</label>
+                      <input
+                        type="tel"
+                        value={transferPhone}
+                        onChange={(e) => setTransferPhone(e.target.value)}
+                        placeholder="+91 98765 00000"
+                        className="px-3.5 py-2 rounded-xl bg-[#0D0D10] border border-[#26262F] text-white text-xs outline-none"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="flex items-center justify-end gap-2 pt-2">
+                    <button
+                      type="button"
+                      onClick={() => setTransferTargetTicket(null)}
+                      className="px-4 py-2 rounded-xl border border-white/10 text-white text-xs hover:bg-white/5"
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      type="submit"
+                      disabled={transferring}
+                      className="px-4 py-2 rounded-xl bg-[#A855F7] hover:bg-[#A855F7]/90 text-white font-semibold text-xs flex items-center gap-1.5 disabled:opacity-50"
+                    >
+                      <Send className="w-3.5 h-3.5" />
+                      <span>{transferring ? 'Transferring Custody...' : 'Confirm Transfer'}</span>
+                    </button>
+                  </div>
+                </form>
+              )}
+            </div>
           </div>
         )}
       </div>

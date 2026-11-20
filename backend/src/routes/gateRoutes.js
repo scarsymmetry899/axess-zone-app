@@ -90,6 +90,16 @@ router.post('/verify', authenticate, requireRole('ORGANIZER', 'ADMIN'), (req, re
     });
   }
 
+  // Check if ticket was transferred to another user (anti-fraud screenshot blocking)
+  if (ticket.status === 'TRANSFERRED') {
+    logCheckIn(ticket.id, ticket.ticket_code, ticket.event_id, req.user.id, 'TRANSFERRED', 'Attempted entry on transferred pass');
+    return res.status(400).json({
+      success: false,
+      status: 'TRANSFERRED',
+      message: 'ENTRY DENIED: This ticket pass was transferred to another user. Original QR code has been revoked.'
+    });
+  }
+
   // Check if already checked in (double entry prevention)
   if (ticket.status === 'CHECKED_IN') {
     logCheckIn(ticket.id, ticket.ticket_code, ticket.event_id, req.user.id, 'ALREADY_CHECKED_IN', `Already checked in at ${ticket.checked_in_at}`);

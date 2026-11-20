@@ -16,7 +16,8 @@ import {
   Clock,
   ChevronDown,
   ChevronUp,
-  ShoppingBag
+  ShoppingBag,
+  ShieldAlert
 } from 'lucide-react';
 
 export default function EventDetailModal({
@@ -452,6 +453,32 @@ export default function EventDetailModal({
                       <span>{addedToCartToast}</span>
                     </div>
                   )}
+
+                  {/* Explicit Refund Window & Terms Notice */}
+                  <div className="mt-4 p-3.5 rounded-xl bg-[#141417] border border-[#232328] flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center shrink-0 mt-0.5">
+                      <ShieldAlert className="w-3.5 h-3.5 text-[#E2E8F0]" />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center justify-between gap-2">
+                        <span className="text-[12px] font-semibold text-white">
+                          {eventData.is_refundable ? 'Refund Window Active' : 'Strict No-Refund Policy'}
+                        </span>
+                        <span className={`px-2 py-0.5 rounded text-[9px] font-mono font-bold uppercase tracking-wider ${
+                          eventData.is_refundable
+                            ? 'bg-[#15301F] text-[#4ADE80] border border-[#224E33]'
+                            : 'bg-[#222226] text-[#A1A1AA] border border-white/10'
+                        }`}>
+                          {eventData.is_refundable ? '48H Prior' : 'Non-Refundable'}
+                        </span>
+                      </div>
+                      <p className="text-[11px] text-[#888] mt-1 leading-snug">
+                        {eventData.is_refundable
+                          ? 'Cancellation and refund requests accepted up to 48 hours prior to event gate opening.'
+                          : 'All ticket pass purchases are strictly final, non-refundable, and non-exchangeable except in the event of official cancellation.'}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

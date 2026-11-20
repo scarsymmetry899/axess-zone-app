@@ -354,6 +354,20 @@ export default function CheckoutModal({
                 </div>
               </div>
 
+              {/* Explicit Refund Window & Terms Notice */}
+              <div className="p-3 rounded-xl bg-[#0D0D10] border border-[#232328] flex items-center justify-between text-xs text-[#848484]">
+                <div className="flex items-center gap-2">
+                  <ShieldCheck className="w-3.5 h-3.5 text-[#AAA]" />
+                  <span>Refund Policy:</span>
+                  <span className="text-white font-medium">
+                    {checkoutData.event?.is_refundable ? 'Eligible (48h window prior to doors)' : 'Strictly Non-Refundable'}
+                  </span>
+                </div>
+                <span className="text-[10px] font-mono text-[#71717A]">
+                  {checkoutData.event?.is_refundable ? '48H Window' : 'All Sales Final'}
+                </span>
+              </div>
+
               {/* Pay Now Button (Stark White pill) */}
               <button
                 onClick={handlePayNow}
