@@ -193,6 +193,7 @@ export default function AdminPortal({ onClose, onEventCreated }) {
 
           <button
             onClick={onClose}
+            aria-label="Close admin portal"
             className="w-8 h-8 rounded-full bg-[#161619] border border-[#262629] hover:border-white/40 text-[#888] hover:text-white flex items-center justify-center transition-all"
           >
             <X className="w-4 h-4" />
