@@ -21,6 +21,8 @@ import PolicyModal from './components/PolicyModal.jsx';
 import Footer from './components/Footer.jsx';
 import BottomNav from './components/BottomNav.jsx';
 import LoginModal from './components/LoginModal.jsx';
+import NotificationDrawer from './components/NotificationDrawer.jsx';
+import { Sparkles, X } from 'lucide-react';
 
 function MainApp() {
   const { role, switchRole } = useAuth();
@@ -47,6 +49,8 @@ function MainApp() {
   const [sponsorPortalOpen, setSponsorPortalOpen] = useState(false);
   const [adminPortalOpen, setAdminPortalOpen] = useState(false);
   const [loginModalOpen, setLoginModalOpen] = useState(false);
+  const [notificationsOpen, setNotificationsOpen] = useState(false);
+  const [abandonedCartPrompt, setAbandonedCartPrompt] = useState(null);
   const [activePolicy, setActivePolicy] = useState(null);
   const [bottomNavTab, setBottomNavTab] = useState('explore');
 
@@ -118,6 +122,7 @@ function MainApp() {
         onOpenSponsor={() => setSponsorPortalOpen(true)}
         onOpenAdmin={() => setAdminPortalOpen(true)}
         onOpenGateScanner={() => setGateScannerOpen(true)}
+        onOpenNotifications={() => setNotificationsOpen(true)}
         onNavigateSection={handleNavigateSection}
         searchQuery={searchQuery}
         onSearchChange={setSearchQuery}
@@ -200,12 +205,69 @@ function MainApp() {
       {checkoutData && (
         <CheckoutModal
           checkoutData={checkoutData}
-          onClose={() => setCheckoutData(null)}
+          onClose={() => {
+            if (checkoutData) {
+              setAbandonedCartPrompt(checkoutData);
+              api.trackAbandonedCart({
+                event_id: checkoutData.event?.id,
+                tier_id: checkoutData.tier?.id,
+                event_title: checkoutData.event?.title,
+                tier_name: checkoutData.tier?.name,
+                quantity: checkoutData.quantity || 1,
+                total_amount: (checkoutData.tier?.price || 1499) * (checkoutData.quantity || 1)
+              }).catch(console.error);
+            }
+            setCheckoutData(null);
+          }}
           onOrderCompleted={() => {
+            setAbandonedCartPrompt(null);
             setTicketsWalletOpen(true);
           }}
         />
       )}
+
+      {/* Floating Abandoned Cart Retargeting Nudge Banner */}
+      {abandonedCartPrompt && !checkoutData && (
+        <div className="fixed bottom-6 right-6 z-40 max-w-md p-4 rounded-2xl bg-[#141418] border border-[#EC4899]/40 shadow-2xl backdrop-blur-md flex items-center justify-between gap-4 animate-in slide-in-from-bottom duration-300">
+          <div className="flex items-center gap-3">
+            <div className="w-9 h-9 rounded-xl bg-[#EC4899]/20 border border-[#EC4899]/30 flex items-center justify-center shrink-0">
+              <Sparkles className="w-4 h-4 text-[#EC4899]" />
+            </div>
+            <div>
+              <p className="text-xs font-semibold text-white">Your tickets are temporarily held!</p>
+              <p className="text-[11px] text-[#A1A1AA]">Use code <strong className="text-white font-mono">CART10</strong> for 10% off before passes release.</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2 shrink-0">
+            <button
+              onClick={() => {
+                setCheckoutData(abandonedCartPrompt);
+                setAbandonedCartPrompt(null);
+              }}
+              className="px-3 py-1.5 rounded-xl bg-white text-black font-semibold text-xs hover:bg-white/90 transition-all"
+            >
+              Resume
+            </button>
+            <button
+              onClick={() => setAbandonedCartPrompt(null)}
+              className="p-1 text-[#888] hover:text-white"
+              aria-label="Dismiss banner"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Targeted Notifications Drawer */}
+      <NotificationDrawer
+        isOpen={notificationsOpen}
+        onClose={() => setNotificationsOpen(false)}
+        onSelectEvent={(eventId) => {
+          setNotificationsOpen(false);
+          setSelectedEventId(eventId);
+        }}
+      />
 
       {ticketsWalletOpen && (
         <TicketsWalletModal

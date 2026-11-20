@@ -133,6 +133,85 @@ function handleOfflineFallback(endpoint, options = {}) {
     return { success: true, verified: true, message: 'Valid Entry Granted' };
   }
 
+  // 9. Sync & Website Operations Fallback
+  if (pathname === '/admin/sync-status') {
+    return {
+      success: true,
+      upstreamUrl: 'https://www.axess.zone',
+      webhookUrl: '/api/webhooks/website-sync',
+      webhookSecret: 'axs_live_webhook_secret_99482',
+      autoSyncFrequency: '15m',
+      status: 'HEALTHY',
+      lastSyncTimestamp: new Date().toISOString(),
+      metrics: { totalGigsSynced: 12, totalTiersSynced: 24, recentLogsCount: 3 },
+      logs: [
+        { id: 'log_1', source_url: 'https://www.axess.zone', sync_type: 'SCHEDULED_CRON', status: 'SUCCESS', entities_synced: 12, details: 'Automated periodic sync with axess.zone: Synced 5 marquee gigs, 7 past events, 18 ticket tiers.', created_at: new Date(Date.now() - 900000).toISOString() },
+        { id: 'log_2', source_url: 'https://www.axess.zone', sync_type: 'WEBHOOK', status: 'SUCCESS', entities_synced: 3, details: 'Webhook ingestion action UPDATE_TIER_STATE: Primal Void Tier 2 opened at ₹4,999.', created_at: new Date(Date.now() - 3600000).toISOString() }
+      ]
+    };
+  }
+  if (pathname === '/admin/sync-axess-website') {
+    return {
+      success: true,
+      message: 'Direct synchronization with axess.zone completed successfully. 12 gigs and ticket matrices refreshed.',
+      log: { id: 'sync_' + Date.now(), source_url: 'https://www.axess.zone', sync_type: 'MANUAL', status: 'SUCCESS', entities_synced: 12, details: 'App Owner live sync with axess.zone executed.', created_at: new Date().toISOString() }
+    };
+  }
+
+  // 10. Notifications Fallback
+  if (pathname === '/notifications' || pathname === '/admin/notifications') {
+    const savedNotifs = JSON.parse(localStorage.getItem('axess_notifications') || '[]');
+    const defaultNotifs = [
+      { id: 'notif_1', title: '⚡ Final Phase Passes for Primal Void', message: 'Only 14 Tier 2 passes remaining for Primal Void at House of Chapora. Secure your tickets before tier closure.', target_location: 'Goa', target_role: 'ALL', action_link: 'ev_primal_void', priority: 'HIGH', category: 'ANNOUNCEMENT', recipient_count: 184, created_at: new Date().toISOString() },
+      { id: 'notif_2', title: '✨ UNMADA VARA NYE VIP Loyalty Access', message: 'Loyalty members get complimentary backstage lounge access when booking Tier 2 or 3 this weekend.', target_location: 'ALL', target_role: 'USER', action_link: 'ev_unmada_nye', priority: 'NORMAL', category: 'OFFER', recipient_count: 412, created_at: new Date().toISOString() },
+      { id: 'notif_3', title: '📍 Kasol Perseverance Festival Venue Advisory', message: 'Shuttle services from Kasol central circle will operate round the clock. Check live map for gate entry.', target_location: 'Kasol', target_role: 'ALL', action_link: 'ev_perseverance', priority: 'URGENT', category: 'ALERT', recipient_count: 96, created_at: new Date().toISOString() }
+    ];
+    return { success: true, notifications: savedNotifs.length > 0 ? savedNotifs : defaultNotifs };
+  }
+  if (pathname === '/admin/notifications' && method === 'POST') {
+    const body = options.body ? JSON.parse(options.body) : {};
+    const newNotif = {
+      id: 'notif_' + Date.now(),
+      title: body.title,
+      message: body.message,
+      target_location: body.target_location || 'ALL',
+      target_role: body.target_role || 'ALL',
+      category: body.category || 'ANNOUNCEMENT',
+      priority: body.priority || 'NORMAL',
+      action_link: body.action_link || '',
+      recipient_count: 240,
+      created_at: new Date().toISOString()
+    };
+    const list = JSON.parse(localStorage.getItem('axess_notifications') || '[]');
+    list.unshift(newNotif);
+    localStorage.setItem('axess_notifications', JSON.stringify(list));
+    return { success: true, message: 'Notification broadcasted', notification: newNotif };
+  }
+
+  // 11. Retargeting Fallback
+  if (pathname === '/admin/retargeting') {
+    return {
+      success: true,
+      stats: {
+        openCartsCount: 3,
+        abandonedGrossINR: 17995,
+        redeemedAttendeesCount: 28,
+        totalRecoveredRevenueINR: 296650,
+        totalConvertedCount: 88
+      },
+      campaigns: [
+        { id: 'retarget_1', name: 'Automated Cart Recovery (1 Hour)', segment_type: 'ABANDONED_CART', filter_location: 'ALL', discount_code: 'AXESS10', discount_percent: 10, message_template: 'Hey, your tickets are still held! Complete your checkout with 10% off before passes release.', auto_trigger: 1, total_reached: 86, total_converted: 29, recovered_revenue: 87400, is_active: 1 },
+        { id: 'retarget_2', name: 'Post-Gig Loyalty Invite (Redeemed Passes)', segment_type: 'REDEEMED_TICKETS', filter_location: 'Goa', discount_code: 'LOYALTY15', discount_percent: 15, message_template: 'Loved House of Chapora? Unlock 15% VIP discount on next week’s Primal Void ritual.', auto_trigger: 1, total_reached: 142, total_converted: 48, recovered_revenue: 168000, is_active: 1 },
+        { id: 'retarget_3', name: 'Engaged Nightlife Browsers', segment_type: 'ENGAGED_BROWSERS', filter_location: 'Bangalore', discount_code: 'BLRVIP', discount_percent: 12, message_template: 'Exclusive early-bird pass access for upcoming Bangalore gigs.', auto_trigger: 0, total_reached: 52, total_converted: 11, recovered_revenue: 41250, is_active: 1 }
+      ],
+      abandonedCarts: [
+        { id: 'cart_1', event_title: 'Primal Void', tier_name: 'Tier 2 (Available Now)', quantity: 2, total_amount: 9998, user_email: 'attendee@axess.zone', status: 'OPEN' },
+        { id: 'cart_2', event_title: 'UNMADA VARA NYE', tier_name: 'Tier 2 (Phase 2)', quantity: 1, total_amount: 2999, user_email: 'kabir.mehta@gmail.com', status: 'OPEN' },
+        { id: 'cart_3', event_title: 'Perseverance Festival', tier_name: 'Phase 1 Festival Pass', quantity: 2, total_amount: 4998, user_email: 'ananya.s@outlook.com', status: 'OPEN' }
+      ]
+    };
+  }
+
   // Default fallback
   return { success: true };
 }
@@ -221,5 +300,21 @@ export const api = {
   // Admin
   getAdminOverview: () => apiRequest('/admin/overview'),
   getAdminUsers: () => apiRequest('/admin/users'),
-  triggerLiveSync: (payload) => apiRequest('/admin/sync-trigger', { method: 'POST', body: JSON.stringify(payload) }),
+  triggerLiveSync: (payload) => apiRequest('/admin/sync-trigger', { method: 'POST', body: JSON.stringify(payload || {}) }),
+  getSyncStatus: () => apiRequest('/admin/sync-status'),
+  syncAxessWebsite: (payload) => apiRequest('/admin/sync-axess-website', { method: 'POST', body: JSON.stringify(payload || {}) }),
+
+  // Notifications
+  getNotifications: (params) => {
+    const qs = params ? new URLSearchParams(params).toString() : '';
+    return apiRequest(`/notifications${qs ? `?${qs}` : ''}`);
+  },
+  getAdminNotifications: () => apiRequest('/admin/notifications'),
+  sendAdminNotification: (payload) => apiRequest('/admin/notifications', { method: 'POST', body: JSON.stringify(payload) }),
+
+  // Retargeting
+  getRetargetingData: () => apiRequest('/admin/retargeting'),
+  createRetargetingCampaign: (payload) => apiRequest('/admin/retargeting/campaigns', { method: 'POST', body: JSON.stringify(payload) }),
+  toggleRetargetingRule: (payload) => apiRequest('/admin/retargeting/rules/toggle', { method: 'POST', body: JSON.stringify(payload) }),
+  trackAbandonedCart: (payload) => apiRequest('/admin/retargeting/track-cart', { method: 'POST', body: JSON.stringify(payload) }),
 };

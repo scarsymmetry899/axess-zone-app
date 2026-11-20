@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext.jsx';
 import { useSocket } from '../context/SocketContext.jsx';
-import { Search, ShoppingBag, ChevronDown, Menu, X, ShieldCheck, QrCode, LayoutDashboard, LogOut, Radio, User } from 'lucide-react';
+import { Search, ShoppingBag, ChevronDown, Menu, X, ShieldCheck, QrCode, LayoutDashboard, LogOut, Radio, User, Bell } from 'lucide-react';
 
 export default function Navbar({
   onOpenLogin,
@@ -11,6 +11,8 @@ export default function Navbar({
   onOpenSponsor,
   onOpenAdmin,
   onOpenGateScanner,
+  onOpenNotifications,
+  unreadNotifCount,
   onNavigateSection,
   searchQuery,
   onSearchChange,
@@ -185,6 +187,18 @@ export default function Navbar({
               )}
             </>
           )}
+
+          {/* Notifications Bell Icon Button */}
+          <button
+            type="button"
+            onClick={onOpenNotifications}
+            aria-label="Notifications & Drops"
+            title="Notifications & Location Advisories"
+            className="relative shrink-0 rounded-full p-2.5 text-white transition-colors hover:bg-white/10 active:scale-95"
+          >
+            <Bell className="w-[19px] h-[19px]" />
+            <span className="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-[#F59E0B] animate-pulse"></span>
+          </button>
 
           {/* Your Tickets Bag Icon Button (Matches axess.zone shopping bag icon) */}
           <button

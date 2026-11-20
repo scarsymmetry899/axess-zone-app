@@ -79,3 +79,23 @@ export function broadcastGateCheckIn(eventId, checkInResult) {
     ioInstance.emit('gate:checkin', { eventId, checkInResult, timestamp: Date.now() });
   }
 }
+
+export function broadcastNotification(notification) {
+  if (ioInstance) {
+    ioInstance.emit('broadcast:notification', {
+      notification,
+      timestamp: Date.now()
+    });
+    console.log(`[SocketService] Broadcasted notification to all clients: ${notification.title}`);
+  }
+}
+
+export function broadcastSyncStatus(syncData) {
+  if (ioInstance) {
+    ioInstance.emit('sync:status', {
+      syncData,
+      timestamp: Date.now()
+    });
+    console.log(`[SocketService] Broadcasted sync status update: ${syncData.status}`);
+  }
+}

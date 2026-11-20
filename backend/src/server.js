@@ -17,6 +17,7 @@ import promoterRoutes from './routes/promoterRoutes.js';
 import sponsorRoutes from './routes/sponsorRoutes.js';
 import adminRoutes from './routes/adminRoutes.js';
 import webhookRoutes from './routes/webhookRoutes.js';
+import notificationRoutes from './routes/notificationRoutes.js';
 
 // Initialize Database
 initDb();
@@ -68,6 +69,7 @@ app.use('/api/promoters', promoterRoutes);
 app.use('/api/sponsors', sponsorRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/webhooks', webhookRoutes);
+app.use('/api/notifications', notificationRoutes);
 
 // Error Handler
 app.use((err, req, res, next) => {

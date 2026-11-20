@@ -48,6 +48,35 @@ export function SocketProvider({ children }) {
       });
     });
 
+    // Targeted custom notifications broadcast
+    s.on('broadcast:notification', (data) => {
+      const notif = data.notification;
+      addAlert({
+        id: Date.now(),
+        title: notif.title || 'Axess Announcement',
+        message: notif.message,
+        type: notif.category?.toLowerCase() || 'notification'
+      });
+      // Also update notification list in local storage for notification center
+      try {
+        const saved = JSON.parse(localStorage.getItem('axess_notifications') || '[]');
+        if (!saved.some(n => n.id === notif.id)) {
+          saved.unshift(notif);
+          localStorage.setItem('axess_notifications', JSON.stringify(saved));
+        }
+      } catch (e) {}
+    });
+
+    // Upstream website sync status
+    s.on('sync:status', (data) => {
+      addAlert({
+        id: Date.now(),
+        title: 'axess.zone Live Sync',
+        message: `Successfully synchronized ${data.syncData?.syncedCount || 12} events & ticket matrices with live website.`,
+        type: 'sync'
+      });
+    });
+
     setSocket(s);
 
     return () => {

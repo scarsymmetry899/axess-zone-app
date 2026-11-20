@@ -193,9 +193,112 @@ export function initDb() {
       details TEXT,
       created_at DATETIME DEFAULT CURRENT_TIMESTAMP
     );
+
+    CREATE TABLE IF NOT EXISTS notifications (
+      id TEXT PRIMARY KEY,
+      title TEXT NOT NULL,
+      message TEXT NOT NULL,
+      target_location TEXT NOT NULL DEFAULT 'ALL',
+      target_role TEXT NOT NULL DEFAULT 'ALL',
+      action_link TEXT,
+      priority TEXT NOT NULL DEFAULT 'NORMAL',
+      category TEXT DEFAULT 'ANNOUNCEMENT',
+      recipient_count INTEGER NOT NULL DEFAULT 0,
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    );
+
+    CREATE TABLE IF NOT EXISTS retargeting_campaigns (
+      id TEXT PRIMARY KEY,
+      name TEXT NOT NULL,
+      segment_type TEXT NOT NULL,
+      filter_location TEXT DEFAULT 'ALL',
+      discount_code TEXT,
+      discount_percent INTEGER DEFAULT 10,
+      message_template TEXT NOT NULL,
+      auto_trigger INTEGER NOT NULL DEFAULT 1,
+      idle_hours INTEGER DEFAULT 2,
+      total_reached INTEGER DEFAULT 0,
+      total_converted INTEGER DEFAULT 0,
+      recovered_revenue REAL DEFAULT 0,
+      is_active INTEGER NOT NULL DEFAULT 1,
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    );
+
+    CREATE TABLE IF NOT EXISTS abandoned_carts (
+      id TEXT PRIMARY KEY,
+      user_id TEXT,
+      user_email TEXT,
+      user_phone TEXT,
+      event_id TEXT NOT NULL,
+      tier_id TEXT NOT NULL,
+      event_title TEXT,
+      tier_name TEXT,
+      quantity INTEGER NOT NULL,
+      total_amount REAL NOT NULL,
+      status TEXT NOT NULL DEFAULT 'OPEN',
+      last_activity DATETIME DEFAULT CURRENT_TIMESTAMP,
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    );
+
+    CREATE TABLE IF NOT EXISTS website_sync_logs (
+      id TEXT PRIMARY KEY,
+      source_url TEXT NOT NULL DEFAULT 'https://www.axess.zone',
+      sync_type TEXT NOT NULL,
+      status TEXT NOT NULL,
+      entities_synced INTEGER DEFAULT 0,
+      details TEXT,
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    );
   `);
 
   seedData();
+  seedFeatureData();
+}
+
+export function seedFeatureData() {
+  const notifCount = db.prepare('SELECT COUNT(*) as count FROM notifications').get().count;
+  if (notifCount === 0) {
+    db.prepare(`
+      INSERT INTO notifications (id, title, message, target_location, target_role, action_link, priority, category, recipient_count)
+      VALUES 
+      ('notif_1', '⚡ Final Phase Passes for Primal Void', 'Only 14 Tier 2 passes remaining for Primal Void at House of Chapora. Secure your tickets before tier closure.', 'Goa', 'ALL', 'ev_primal_void', 'HIGH', 'ANNOUNCEMENT', 184),
+      ('notif_2', '✨ UNMADA VARA NYE VIP Loyalty Access', 'Loyalty members get complimentary backstage lounge access when booking Tier 2 or 3 this weekend.', 'ALL', 'USER', 'ev_unmada_nye', 'NORMAL', 'OFFER', 412),
+      ('notif_3', '📍 Kasol Perseverance Festival Venue Advisory', 'Shuttle services from Kasol central circle will operate round the clock. Check live map for gate entry.', 'Kasol', 'ALL', 'ev_perseverance', 'URGENT', 'ALERT', 96)
+    `).run();
+  }
+
+  const retargetCount = db.prepare('SELECT COUNT(*) as count FROM retargeting_campaigns').get().count;
+  if (retargetCount === 0) {
+    db.prepare(`
+      INSERT INTO retargeting_campaigns (id, name, segment_type, filter_location, discount_code, discount_percent, message_template, auto_trigger, idle_hours, total_reached, total_converted, recovered_revenue, is_active)
+      VALUES
+      ('retarget_1', 'Automated Cart Recovery (1 Hour)', 'ABANDONED_CART', 'ALL', 'AXESS10', 10, 'Hey {{name}}, your tickets for {{event_title}} are still held! Complete your checkout in the next 15 mins with 10% off.', 1, 1, 86, 29, 87400, 1),
+      ('retarget_2', 'Post-Gig Loyalty Invite (Redeemed Passes)', 'REDEEMED_TICKETS', 'Goa', 'LOYALTY15', 15, 'Loved your night at House of Chapora? Unlock 15% VIP discount on next week’s Primal Void ritual.', 1, 24, 142, 48, 168000, 1),
+      ('retarget_3', 'Engaged Nightlife Browsers', 'ENGAGED_BROWSERS', 'Bangalore', 'BLRVIP', 12, 'Noticed you checking out upcoming Bangalore nightlife gigs. Here is an exclusive early-bird tier access code.', 0, 48, 52, 11, 41250, 1)
+    `).run();
+  }
+
+  const syncLogsCount = db.prepare('SELECT COUNT(*) as count FROM website_sync_logs').get().count;
+  if (syncLogsCount === 0) {
+    db.prepare(`
+      INSERT INTO website_sync_logs (id, source_url, sync_type, status, entities_synced, details)
+      VALUES
+      ('sync_log_1', 'https://www.axess.zone', 'SCHEDULED_CRON', 'SUCCESS', 12, 'Automated periodic synchronization with axess.zone: Synced 5 marquee gigs, 7 past events, 18 ticket tiers, and S3 CDN media.'),
+      ('sync_log_2', 'https://www.axess.zone', 'WEBHOOK', 'SUCCESS', 3, 'Webhook ingestion action UPDATE_TIER_STATE: Primal Void Tier 1 marked closed, Tier 2 opened at ₹4,999.'),
+      ('sync_log_3', 'https://www.axess.zone', 'MANUAL', 'SUCCESS', 12, 'Manual App Owner upstream crawl of axess.zone: All venue coordinates, prices, and high-res posters refreshed.')
+    `).run();
+  }
+
+  const cartCount = db.prepare('SELECT COUNT(*) as count FROM abandoned_carts').get().count;
+  if (cartCount === 0) {
+    db.prepare(`
+      INSERT INTO abandoned_carts (id, user_id, user_email, user_phone, event_id, tier_id, event_title, tier_name, quantity, total_amount, status)
+      VALUES
+      ('cart_101', 'user_attendee', 'attendee@axess.zone', '+91 98765 43210', 'ev_primal_void', 'tier_primal_tier2', 'Primal Void', 'Tier 2 (Available Now)', 2, 9998, 'OPEN'),
+      ('cart_102', 'user_202', 'kabir.mehta@gmail.com', '+91 98201 12345', 'ev_unmada_nye', 'tier_unmada_p2', 'UNMADA VARA NYE', 'Tier 2 (Phase 2)', 1, 2999, 'OPEN'),
+      ('cart_103', 'user_303', 'ananya.s@outlook.com', '+91 99100 54321', 'ev_perseverance', 'tier_persevere_ga', 'Perseverance Festival', 'Phase 1 Festival Pass', 2, 4998, 'OPEN')
+    `).run();
+  }
 }
 
 export function seedData(force = false) {
